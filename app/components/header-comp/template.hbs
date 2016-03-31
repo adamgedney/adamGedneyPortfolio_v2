@@ -1,0 +1,12 @@
+<header>
+    <div class="container-fluid">
+        <h1>Adam Gedney</h1>
+        <nav>
+            <ul>
+                {{#each menuItems as |item|}}
+                    <li><a href="{{item.href}}" title="{{item.text}}">{{item.text}}</a></li>
+                {{/each}}
+            </ul>
+        </nav>
+    </div>
+</header>

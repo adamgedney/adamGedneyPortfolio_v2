@@ -1,0 +1,1 @@
+Be sure to add the path to new scss folders to the /ember/cli-build.js sassOptions includePaths

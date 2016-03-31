@@ -1,0 +1,28 @@
+header{
+  height: 45px;
+  background: $bg-alt;
+  @extend .cf;
+
+  h1{
+	float: left;
+	line-height: 45px;
+	margin: 0;
+	color: $text-primary;
+  }
+
+  nav{
+	float: right;
+
+	ul{
+	  li{
+		display: inline-block;
+		margin-right: 9px;
+
+		a{
+		  line-height: 45px;
+		  color: $text-primary;
+		}
+	  }
+	}
+  }
+}

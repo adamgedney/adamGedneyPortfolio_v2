@@ -1,0 +1,11 @@
+<footer>
+    <div class="container-fluid">
+        <nav>
+            <ul>
+                {{#each footerMenuItems as |item|}}
+                    <li><a href="{{item.href}}" title="{{item.text}}">{{item.text}}</a></li>
+                {{/each}}
+            </ul>
+        </nav>
+    </div>
+</footer>

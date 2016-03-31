@@ -1,0 +1,24 @@
+footer{
+  height: 90px;
+  background: $bg;
+  @extend .cf;
+
+  nav{
+	margin: 0 auto;
+
+	ul{
+	  width: 30%;
+	  margin: 0 35%;
+
+	  li{
+		display: inline-block;
+		margin-right: 9px;
+
+		a{
+		  line-height: 90px;
+		  color: $text-primary-alt;
+		}
+	  }
+	}
+  }
+}
