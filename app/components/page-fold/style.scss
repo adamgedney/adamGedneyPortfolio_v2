@@ -2,10 +2,11 @@
   position: relative;
   z-index: 1;
   background: black;
+  overflow: hidden;
 
   &:before{
     content:'';
-    background: url('/images/colour-of-nature-fractal.jpg') repeat center center black;
+    background: url('/images/bg-abstr.jpg') repeat center center black;
     //background-attachment: fixed;
     background-size: cover;
     position: absolute;
@@ -20,5 +21,26 @@
 
   .page__inner{
     position: relative;
+
+    h1,
+    p{
+      color: $text-primary-alt;
+    }
+
+    h1{
+      margin-top: 12%;
+      text-align: center;
+      font-size: 79px;
+      font-weight: 100;
+      line-height: 1.6;
+      -webkit-animation: backgroundZoom 120s infinite ease-in-out;
+    }
+
+    p{
+      text-align: center;
+      opacity: 0.3;
+      font-weight: 200;
+      -webkit-animation: backgroundZoom 240s infinite ease-in-out;
+    }
   }
 }

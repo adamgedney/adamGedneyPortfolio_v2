@@ -26,9 +26,11 @@ let $ = Ember.$,
 			menuItems : Ember.computed(()=>{
 				return [
 					{href:'#who',text:'Who I Am'},
-					{href:'#work',text:'Work'},
 					{href:'#tools',text:'Tools'},
-					{href:'mailto:adam.gedney@gmail.com?Subject=adamgedney.com inquiry',text:'Contact'}
+					{href:'#work',text:'Work'},
+					{href:'#codepen',text:'Codepen'},
+					{href:'#video',text:'Video'},
+					{href:'#contact',text:'Contact'}
 				];
 			})
 		},

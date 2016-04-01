@@ -4,7 +4,7 @@
 $red : #D93330;
 $orange : #DF7F3D;
 $yellow : #EDD832;
-$green : #90C741;
+$green : #1E7B8D;
 $blue : #2D72B8;
 $greyBlue : #565F68;
 $purple : #3f3685;
@@ -81,7 +81,17 @@ $button: $blue;
 
 
 
-
-
-
-
+//===========================//
+// Classes
+//===========================//
+.red{color: $red; }
+.orange{color: $orange;}
+.yellow{color:$yellow;}
+.green{color: $green;}
+.blue{color: $blue;}
+.greyBlue{color: $greyBlue;}
+.purple{color: $purple;}
+.brown{color: $brown;}
+.black{color: $black;}
+.grey{color: $grey;}
+.white{color: $white;}
