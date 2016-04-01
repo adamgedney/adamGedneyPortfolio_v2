@@ -1,13 +1,20 @@
-header{
+div header{
   height: 45px;
   background: $bg-alt;
   @extend .cf;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 0 36px;
+  z-index: 2;
 
   h1{
 	float: left;
 	line-height: 45px;
 	margin: 0;
-	color: $text-primary;
+	color: $text-primary-alt;
+	font-weight: 100;
   }
 
   nav{
@@ -20,7 +27,13 @@ header{
 
 		a{
 		  line-height: 45px;
-		  color: $text-primary;
+		  color: $text-primary-alt;
+		  text-decoration: none;
+		  font-weight: 100;
+
+		  &:hover{
+			@extend .hover;
+		  }
 		}
 	  }
 	}

@@ -1,7 +1,28 @@
 .fold{
-  background: $bg;
+  position: relative;
+  z-index: 1;
+
+  &:before{
+    content:'';
+    background: url('/images/geometric.png') no-repeat center center $bg;
+    //background-attachment: fixed;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0.06;
+    z-index: -1;
+  }
 
   .page__inner{
-
+    .profile{
+      text-align: center;
+      border-radius: 50%;
+      max-width: 150px;
+      margin: 10% auto 0;
+      display: block;
+    }
   }
 }
