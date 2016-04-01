@@ -1,7 +1,35 @@
 .tools{
-  background: $bg;
+  background: $blue;
+  position: relative;
+
+  &:after{
+    content: '';
+    @include fadeColorTopDown(#12121A);
+  }
 
   .page__inner{
+    position: relative;
+    //&:before{
+    //  content: '';
+    //  background: url("/images/code-logos.png") no-repeat center center transparent;
+    //  background-size: contain;
+    //  position: absolute;
+    //  top: -63px;
+    //  bottom: 0;
+    //  right: 0;
+    //  left: 0;
+    //  z-index: 1;
+    //}
 
+    &:after{
+      content: '';
+      @include fadeColorBottomUp(#12121A);
+      z-index: 1;
+    }
+
+    h2{
+      text-align: right;
+      padding-right: 10%;
+    }
   }
 }

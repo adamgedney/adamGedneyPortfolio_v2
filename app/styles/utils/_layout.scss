@@ -1,5 +1,6 @@
 .page{
   @include col(12);
+  position: relative;
 
   &__inner{
 	padding: 36px;

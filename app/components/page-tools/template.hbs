@@ -1,6 +1,11 @@
 <div class="page tools">
     <a name="tools"></a>
     <div class="page__inner">
-
+        <h2>Some of the Tools I Use...</h2>
+        <div class="tools__container">
+            {{#each tool in toolLogos}}
+                <img src="{{tool.path}} alt="{{tool.alt}}"/>
+            {{/each}}
+        </div>
     </div>
 </div>

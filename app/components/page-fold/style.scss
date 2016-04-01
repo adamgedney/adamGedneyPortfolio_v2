@@ -34,6 +34,10 @@
       font-weight: 100;
       line-height: 1.6;
       -webkit-animation: backgroundZoom 120s infinite ease-in-out;
+
+      span.green{
+        text-shadow: 0 0 8px $green;
+      }
     }
 
     p{
