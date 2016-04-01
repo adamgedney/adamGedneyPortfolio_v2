@@ -1,12 +1,10 @@
 <header>
-    <div class="container-fluid">
-        <h1>Adam Gedney</h1>
-        <nav>
-            <ul>
-                {{#each menuItems as |item|}}
-                    <li><a href="{{item.href}}" title="{{item.text}}">{{item.text}}</a></li>
-                {{/each}}
-            </ul>
-        </nav>
-    </div>
+    <img class="profile" src="/images/profile.jpg" alt="Profile Image" />
+    <nav>
+        <ul>
+            {{#each menuItems as |item|}}
+                <li><a href="{{item.href}}" title="{{item.text}}">{{item.text}}</a></li>
+            {{/each}}
+        </ul>
+    </nav>
 </header>

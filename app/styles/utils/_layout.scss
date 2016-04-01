@@ -1,9 +1,10 @@
 .page{
   @include col(12);
-  min-height: 600px;
-  min-height: 100vh;
 
   &__inner{
 	padding: 36px;
+    min-height: 600px;
+    min-height: 100vh;
+    position: relative;
   }
 }

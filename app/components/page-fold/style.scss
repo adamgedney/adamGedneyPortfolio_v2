@@ -1,10 +1,11 @@
 .fold{
   position: relative;
   z-index: 1;
+  background: black;
 
   &:before{
     content:'';
-    background: url('/images/geometric.png') no-repeat center center $bg;
+    background: url('/images/colour-of-nature-fractal.jpg') repeat center center black;
     //background-attachment: fixed;
     background-size: cover;
     position: absolute;
@@ -12,17 +13,12 @@
     bottom: 0;
     right: 0;
     left: 0;
-    opacity: 0.06;
+    //opacity: 0.06;
     z-index: -1;
+    -webkit-animation: backgroundZoom 60s infinite ease-in-out;
   }
 
   .page__inner{
-    .profile{
-      text-align: center;
-      border-radius: 50%;
-      max-width: 150px;
-      margin: 10% auto 0;
-      display: block;
-    }
+    position: relative;
   }
 }
