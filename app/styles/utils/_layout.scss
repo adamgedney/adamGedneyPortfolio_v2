@@ -1,0 +1,8 @@
+.page{
+  @include col(12);
+  min-height: 300px;
+
+  &__inner{
+	padding: 36px;
+  }
+}
