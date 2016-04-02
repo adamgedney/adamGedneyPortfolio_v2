@@ -65,6 +65,20 @@
   font-size: 10px;
 }
 
+/*
+* Makes a ghost button
+*/
+@mixin ghostButton($color,$radius,$padX,$padY){
+  border: 1px solid $color;
+  border-radius: $radius;
+  color: $color;
+  padding: $padY $padX;
+}
+
+
+/*
+* Fades a color down to transparent from top
+*/
 @mixin fadeColorTopDown($color:black){
   height: 49%;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&1+0,0+100 */
@@ -78,6 +92,10 @@
   position: absolute;
 }
 
+
+/*
+* Fades a color up to transparent from bottom
+*/
 @mixin fadeColorBottomUp($color:black){
   height: 49%;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,1+100 */
@@ -91,6 +109,10 @@
   position: absolute;
 }
 
+
+/*
+* Blur anything on the target
+*/
 @mixin blur($val:5px){
   -webkit-filter: blur($val);
   -moz-filter: blur($val);

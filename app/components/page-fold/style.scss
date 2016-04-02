@@ -36,9 +36,8 @@
       line-height: 1.6;
       //-webkit-animation: backgroundZoom 120s infinite ease-in-out;
 
-
-
-      span.green{
+      span.colorAnimation{
+        color: $green;
         text-shadow: 0 0 8px $green;
       }
     }
@@ -48,6 +47,30 @@
       opacity: 0.3;
       font-weight: 200;
       //-webkit-animation: backgroundZoom 240s infinite ease-in-out;
+    }
+  }
+}
+
+
+/**
+Define title color animation keyframes
+**/
+@include keyframes(colorTransition) {
+  0% { color: $green; text-shadow: 0 0 8px $green;}
+  20% { color: $yellow; text-shadow: 0 0 8px $yellow;}
+  40% { color: $blue; text-shadow: 0 0 8px $blue;}
+  55% { color: $red; text-shadow: 0 0 8px $red;}
+  60% { color: $purple; text-shadow: 0 0 8px $purple;}
+  100% { color: $green; text-shadow: 0 0 8px $green;}
+}
+
+/** Title animation trigger **/
+.fold{
+  .page__inner{
+    h1{
+      span.colorAnimation{
+        @include animation('colorTransition 40s infinite #{$ef-linear} 0s');
+      }
     }
   }
 }

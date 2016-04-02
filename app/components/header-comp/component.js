@@ -1,5 +1,4 @@
 import Ember from 'ember';
-//import _ from 'underscore';
 
 const {getOwner} = Ember;
 
@@ -19,8 +18,7 @@ let $ = Ember.$,
 			// Set Properties/helpers
 			$this.setProperties(self.properties);
 
-			// Attach Event Handlers
-			self.attachHandlers();
+			self.initScrollMagic();
 		},
 		properties : {
 			menuItems : Ember.computed(()=>{
@@ -34,8 +32,35 @@ let $ = Ember.$,
 				];
 			})
 		},
-		attachHandlers(){
 
+		/**
+		 * Event handlers
+		 * @param e
+		 */
+		handlers(){
+
+			// Menu item click
+			$('.header__menuItem').click(function(e){
+				e.preventDefault();
+				console.log(e,'rrr');
+			});
+		},
+
+		/**
+		 * Setup ScrollMagic controller
+		 */
+		initScrollMagic(){
+			// init controller
+			//var scrollMagicController = new ScrollMagic.Controller();
+			//
+			//// create a scene
+			//new ScrollMagic.Scene({
+			//	triggerElement : '.who',
+			//	duration: 100,  // the scene should last for a scroll distance of 100px
+			//	offset: 50      // start this scene after scrolling for 50px
+			//})
+			//	.setPin(".who h2") // pins the element for the the scene's duration
+			//	.addTo(scrollMagicController); // assign the scene to the controller
 		}
 	};
 
@@ -45,5 +70,6 @@ export default Ember.Component.extend({
 		this._super(...arguments);
 
 		component.rendered(this);
-	}
+	},
+	didInsertElement:component.handlers
 });

@@ -64,6 +64,17 @@
 /*
 Keyframe Animator
 src: http://joshbroton.com/quick-fix-sass-mixins-for-css-keyframe-animations/
+
+Usage: first define the keyframe, then use it
+@include keyframes(randomFloat) {
+	0% { transform : translate($rndm1+px, $rndm2+px); }
+	20% { transform : translate(random(90)+px, random(90)+px); }
+	40% { transform : translate(random(90)+px, random(90)+px); }
+	100% { transform : translate($rndm1+px, $rndm2+px); }
+  }
+
+  @include animation('randomFloat 60s infinite ease-in-out 0s');
+
 */
 @mixin animation($animate...) {
   $max: length($animate);

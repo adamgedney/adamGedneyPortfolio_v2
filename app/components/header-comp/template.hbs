@@ -1,9 +1,9 @@
-<header>
-    <a href="#fold"><img class="profile" src="/images/profile.jpg" alt="Profile Image" /></a>
+<header class="header">
+    <a href="#fold" class="profile__anchor profile__anchor--asBackground"><img class="profile__img" src="/images/profile.jpg" alt="Profile Image" /></a>
     <nav>
         <ul>
             {{#each menuItems as |item|}}
-                <li><a href="{{item.href}}" title="{{item.text}}">{{item.text}}</a></li>
+                <li class="header__menuItem"><a href="{{item.href}}" title="{{item.text}}">{{item.text}}</a></li>
             {{/each}}
         </ul>
     </nav>

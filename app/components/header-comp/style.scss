@@ -10,6 +10,81 @@ div header{
   z-index: 4;
   overflow: hidden;
 
+  &.header--vertical{
+	background: none;
+	left: initial;
+	bottom: 0;
+	height: 100%;
+	width: 98px;
+
+	.profile__anchor{
+	  text-align: center;
+	  margin: 9px auto;
+	  display: block;
+	  -webkit-animation: zoomFromZero 6s 1 ease-in-out;
+	  float: none;
+
+	  img{
+		max-height: 71px;
+		border-radius: 50%;
+	  }
+
+
+	  &--asBackground{
+		position: absolute;
+		right: 42px;
+		z-index: -1;
+
+		&--1{
+		  top: 69px;
+		}
+		&--2{
+		  top: 164px;
+		}
+		&--3{
+		  top: 259px;
+		}
+		&--4{
+		  top: 354px;
+		}
+		&--5{
+		  top: 449px;
+		}
+		&--6{
+		  top: 544px;
+		}
+	  }
+	}
+
+	nav{
+	  ul{
+		padding-top: 75px;
+		li{
+		  margin-bottom: 18px;
+		  a{
+			width: 69px;
+			height: 69px;
+			@include ghostButton(rgba(255,255,255,0.5),50%,3px,3px);
+			line-height: 69px;
+			@include duration(.5s);
+
+			&:hover{
+			  cursor: pointer;
+			  @include ghostButton(rgba(255,255,255,1),50%,12px,3px);
+			  width: 75px;
+			  height: 75px;
+			  line-height: 75px;
+			  @include duration(.5s);
+			  -webkit-transform-origin: center center;
+			  transform-origin: center center;
+			  margin-left: -12px;
+			}
+		  }
+		}
+	  }
+	}
+  }
+
   h1{
 	float: left;
 	line-height: 45px;
@@ -19,14 +94,17 @@ div header{
 	text-indent: -999999px;
   }
 
-  .profile{
+  .profile__anchor{
 	text-align: center;
-	border-radius: 50%;
-	max-height: 33px;
 	margin: 8px 0 0;
 	display: block;
 	-webkit-animation: zoomFromZero 6s 1 ease-in-out;
 	float: left;
+
+	img{
+	  border-radius: 50%;
+	  max-height: 33px;
+	}
   }
 
   nav{
@@ -42,7 +120,8 @@ div header{
 		  color: $text-primary-alt;
 		  text-decoration: none;
 		  font-weight: 100;
-		  text-shadow: 2px 2px 2px black;
+		  height: 45px;
+		  display: inline-block;
 
 		  &:hover{
 			@extend .hover;
