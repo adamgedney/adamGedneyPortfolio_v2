@@ -2,74 +2,86 @@ import Ember from 'ember';
 //import _ from 'underscore';
 
 const {getOwner} = Ember;
+const imagePath = '/images/codeTools/';
+
+/**
+ * Tools logos for the Tools section
+ * @type {*[]}
+ */
+const toolLogos = [
+	{path:imagePath + 'angularjs-logo.png',alt:'Angular'},
+	{path:imagePath + 'apigateway.png',alt:'AWS API Gateway'},
+	{path:imagePath + 'autoprefixer-logo.png',alt:'Autoprefixer'},
+	{path:imagePath + 'AWeber-Logo.png',alt:'AWeber'},
+	{path:imagePath + 'aws-logo.png',alt:'AWS'},
+	{path:imagePath + 'babel.png',alt:'Babel'},
+	{path:imagePath + 'bitbucket.png',alt:'Bitbucket'},
+	{path:imagePath + 'bluebird.png',alt:'Bluebird'},
+	{path:imagePath + 'bower.png',alt:'Bower'},
+	{path:imagePath + 'chrome.png',alt:'Chrome'},
+	{path:imagePath + 'cloudFront-small.png',alt:'AWS Cloudfront'},
+	{path:imagePath + 'composeLogo.png',alt:'Compose.io'},
+	{path:imagePath + 'digital-ocean-logo-4x3.png',alt:'Digital Ocean'},
+	{path:imagePath + 'docs_sheets_slides.png',alt:'Google Appss'},
+	{path:imagePath + 'druplicon-small.png',alt:'Drupal'},
+	{path:imagePath + 'DynamoDB.png',alt:'AWS DynamoDB'},
+	{path:imagePath + 'ec2.png',alt:'AWS EC2'},
+	{path:imagePath + 'el-capitan.png',alt:'OSX'},
+	{path:imagePath + 'eoa.png',alt:'Email on Acid'},
+	{path:imagePath + 'es6-logo.png',alt:'ES6'},
+	{path:imagePath + 'Evernote-icon.png',alt:'Evernote'},
+	{path:imagePath + 'express.png',alt:'ExpressJS'},
+	{path:imagePath + 'git.png',alt:'GIT'},
+	{path:imagePath + 'github.png',alt:'Github'},
+	{path:imagePath + 'grunt.png',alt:'Grunt'},
+	{path:imagePath + 'gulp.png',alt:'Gulp'},
+	{path:imagePath + 'handlebars-logo.png',alt:''},
+	{path:imagePath + 'html5.png',alt:'HTML5'},
+	{path:imagePath + 'html-css-js.png',alt:'HTML5 CSS3 ES2015'},
+	{path:imagePath + 'illustrator.png',alt:'Adobe Illustrator'},
+	{path:imagePath + 'lambda.png',alt:'AWS Lambda'},
+	{path:imagePath + 'linux.png',alt:'Linux'},
+	{path:imagePath + 'logo-node.png',alt:''},
+	{path:imagePath + 'mailchimp-logo2.png',alt:'Mailchimp'},
+	{path:imagePath + 'Mandrill_Logo.png',alt:'Mandrill'},
+	{path:imagePath + 'meteor.png',alt:'Meteor'},
+	{path:imagePath + 'mongodb-logo-large.png',alt:'MongoDB'},
+	{path:imagePath + 'MySQL.png',alt:'MySQL'},
+	{path:imagePath + 'npm.png',alt:'npm'},
+	{path:imagePath + 'photoshop.png',alt:'Adobe Photoshop'},
+	{path:imagePath + 'php.png',alt:'PHP'},
+	{path:imagePath + 'PhpStorm.png',alt:'PHPStorm'},
+	{path:imagePath + 'react.png',alt:'React'},
+	{path:imagePath + 'require.png',alt:'RequireJS'},
+	{path:imagePath + 'route53.0-vector-stencils-library',alt:'AWS Route 53'},
+	{path:imagePath + 's3.png',alt:'AWS S3'},
+	{path:imagePath + 'sass.png',alt:'SASS'},
+	{path:imagePath + 'slack-chat.png',alt:'Slack'},
+	{path:imagePath + 'sns.png',alt:'AWS SNS'},
+	{path:imagePath + 'socketio2.png',alt:'Socket.io'},
+	{path:imagePath + 'Sublime-Text-2.png',alt:'Sublime Text 3'},
+	{path:imagePath + 'terminal.png',alt:'Bash'},
+	{path:imagePath + 'trello.png',alt:'Trello'},
+	{path:imagePath + 'underscore_js.png',alt:'_'},
+	{path:imagePath + 'Virtualbox_logo.png',alt:'VirtualBox'},
+	{path:imagePath + 'webpack.png',alt:'Webpack'},
+	{path:imagePath + 'wordpress.png',alt:'WordPress'},
+	{path:imagePath + 'yeoman-logo.png',alt:'Yeoman'}
+
+];
+
 //$ = Ember.$,
 let $this,
 	self,
-	imagePath = '/images/codeTools/',
 
 	component = {
 		route : '/',
-		logos :[
-			{path:imagePath + 'angularjs-logo.png',alt:'Angular Logo'},
-			{path:imagePath + 'apigateway.png',alt:'AWS API Gateway Logo'},
-			{path:imagePath + 'autoprefixer-logo.png',alt:'Autoprefixer Logo'},
-			{path:imagePath + 'AWeber-Logo.png',alt:'AWeber Logo'},
-			{path:imagePath + 'aws-logo.png',alt:'AWS Logo'},
-			{path:imagePath + 'babel.png',alt:'Babel Logo'},
-			{path:imagePath + 'bitbucket.png',alt:'Bitbucket Logo'},
-			{path:imagePath + 'bluebird.png',alt:'Bluebird Logo'},
-			{path:imagePath + 'bower.png',alt:'Bower Logo'},
-			{path:imagePath + 'chrome.png',alt:'Chrome Logo'},
-			{path:imagePath + 'cloudFront-small.png',alt:'AWS Cloudfront Logo'},
-			{path:imagePath + 'composeLogo.png',alt:'Compose.io Logo'},
-			{path:imagePath + 'digital-ocean-logo-4x3.png',alt:'Digital Ocean Logo'},
-			{path:imagePath + 'docs_sheets_slides.png',alt:'Google Apps Logos'},
-			{path:imagePath + 'druplicon-small.png',alt:'Drupal Logo'},
-			{path:imagePath + 'DynamoDB.png',alt:'AWS DynamoDB Logo'},
-			{path:imagePath + 'ec2.png',alt:'AWS EC2 Logo'},
-			{path:imagePath + 'el-capitan.png',alt:'OSX Logo'},
-			{path:imagePath + 'eoa.png',alt:'Email on Acid Logo'},
-			{path:imagePath + 'es6-logo.png',alt:'ES6 Logo'},
-			{path:imagePath + 'Evernote-icon.png',alt:'Evernote Logo'},
-			{path:imagePath + 'express.png',alt:'ExpressJS Logo'},
-			{path:imagePath + 'git.png',alt:'GIT Logo'},
-			{path:imagePath + 'github.png',alt:'Github Logo'},
-			{path:imagePath + 'grunt.png',alt:'Grunt Logo'},
-			{path:imagePath + 'gulp.png',alt:'Gulp Logo'},
-			{path:imagePath + 'handlebars-logo.png',alt:' Logo'},
-			{path:imagePath + 'html5.png',alt:'HTML5 Logo'},
-			{path:imagePath + 'html-css-js.png',alt:'HTML5 CSS3 ES2015 Logo'},
-			{path:imagePath + 'illustrator.png',alt:'Adobe Illustrator Logo'},
-			{path:imagePath + 'lambda.png',alt:'AWS Lambda Logo'},
-			{path:imagePath + 'linux.png',alt:'Linux Logo'},
-			{path:imagePath + 'logo-node.png',alt:' Logo'},
-			{path:imagePath + 'mailchimp-logo2.png',alt:'Mailchimp Logo'},
-			{path:imagePath + 'Mandrill_Logo.png',alt:'Mandrill Logo'},
-			{path:imagePath + 'meteor.png',alt:'Meteor Logo'},
-			{path:imagePath + 'mongodb-logo-large.png',alt:'MongoDB Logo'},
-			{path:imagePath + 'MySQL.png',alt:'MySQL Logo'},
-			{path:imagePath + 'npm.png',alt:'npm Logo'},
-			{path:imagePath + 'photoshop.png',alt:'Adobe Photoshop Logo'},
-			{path:imagePath + 'php.png',alt:'PHP Logo'},
-			{path:imagePath + 'PhpStorm.png',alt:'PHPStorm Logo'},
-			{path:imagePath + 'react.png',alt:'React Logo'},
-			{path:imagePath + 'require.png',alt:'RequireJS Logo'},
-			{path:imagePath + 'route53.0-vector-stencils-library',alt:'AWS Route 53 Logo'},
-			{path:imagePath + 's3.png',alt:'AWS S3 Logo'},
-			{path:imagePath + 'sass.png',alt:'SASS Logo'},
-			{path:imagePath + 'slack-chat.png',alt:'Slack Logo'},
-			{path:imagePath + 'sns.png',alt:'AWS SNS Logo'},
-			{path:imagePath + 'socketio2.png',alt:'Socket.io Logo'},
-			{path:imagePath + 'Sublime-Text-2.png',alt:'Sublime Text 3 Logo'},
-			{path:imagePath + 'terminal.png',alt:'Bash Logo'},
-			{path:imagePath + 'trello.png',alt:'Trello Logo'},
-			{path:imagePath + 'underscore_js.png',alt:'_ Logo'},
-			{path:imagePath + 'Virtualbox_logo.png',alt:'VirtualBox Logo'},
-			{path:imagePath + 'webpack.png',alt:'Webpack Logo'},
-			{path:imagePath + 'wordpress.png',alt:'WordPress Logo'},
-			{path:imagePath + 'yeoman-logo.png',alt:'Yeoman Logo'}
-
-		],
+		willRender() {
+			// Set the "categories" property to a JavaScript object
+			// with the category name as the key and the value a list
+			// of products.
+			this.set('toolLogos', toolLogos);
+		},
 		rendered(that){
 			$this = that;
 			self  = this;
@@ -79,13 +91,13 @@ let $this,
 
 			// Set Properties/helpers
 			$this.setProperties(self.properties);
-
+console.log($this);
 			// Attach Event Handlers
 			self.attachHandlers();
 		},
 		properties : {
 			toolLogos : Ember.computed(()=>{
-				return self.logos;
+				return $this.toolLogos;
 			})
 		},
 		attachHandlers(){
@@ -95,6 +107,7 @@ let $this,
 
 // Export Component
 export default Ember.Component.extend({
+	willRender : component.willRender,
 	didReceiveAttrs(){
 		this._super(...arguments);
 

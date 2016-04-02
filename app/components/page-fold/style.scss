@@ -25,6 +25,7 @@
     h1,
     p{
       color: $text-primary-alt;
+      -webkit-animation: zoomFromZero 10s 1 ease-in-out;
     }
 
     h1{
@@ -33,7 +34,9 @@
       font-size: 79px;
       font-weight: 100;
       line-height: 1.6;
-      -webkit-animation: backgroundZoom 120s infinite ease-in-out;
+      //-webkit-animation: backgroundZoom 120s infinite ease-in-out;
+
+
 
       span.green{
         text-shadow: 0 0 8px $green;
@@ -44,7 +47,7 @@
       text-align: center;
       opacity: 0.3;
       font-weight: 200;
-      -webkit-animation: backgroundZoom 240s infinite ease-in-out;
+      //-webkit-animation: backgroundZoom 240s infinite ease-in-out;
     }
   }
 }

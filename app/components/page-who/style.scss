@@ -25,8 +25,10 @@
 
   .page__inner{
     h2{
-      -webkit-animation: backgroundZoom 120s infinite ease-in-out;
-    }
+      //-webkit-animation: backgroundZoom 120s infinite ease-in-out;
+	  -webkit-animation: zoomFromZero 30s 1 ease-in-out;
+
+	}
 
 	p{
 	  @include col(6);
