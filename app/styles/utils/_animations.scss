@@ -61,59 +61,38 @@
 }
 
 
-@mixin randomFloater($initX,$initY) {
-  // Random float
-  @-webkit-keyframes randomFloat {
-    //$initX : random(90) * 1%;
-    //$initY : random(70) * 1%;
+/*
+Keyframe Animator
+src: http://joshbroton.com/quick-fix-sass-mixins-for-css-keyframe-animations/
+*/
+@mixin animation($animate...) {
+  $max: length($animate);
+  $animations: '';
 
-    0% {
-      //transform: translate($initX,$initY);
-      top  : $initY;
-      left : $initX;
-    }
-    //10% {
-    //  top  : random(70) * 1%;
-    //  left : random(90) * 1%;
-    //}
-    //20% {
-    //  top  : random(70) * 1%;
-    //  left : random(90) * 1%;
-    //}
-    //30% {
-    //  top  : random(70) * 1%;
-    //  left : random(90) * 1%;
-    //}
-    40% {
-      top  : random(70) * 1%;
-      left : random(90) * 1%;
-    }
-    //50% {
-    //  top  : $initY;
-    //  left : $initX;
-    //}
-    //60% {
-    //  top  : random(70) * 1%;
-    //  left : random(90) * 1%;
-    //}
-    //70% {
-    //  top  : random(70) * 1%;
-    //  left : random(90) * 1%;
-    //}
-    //80% {
-    //  top  : random(70) * 1%;
-    //  left : random(90) * 1%;
-    //}
-    //90% {
-    //  top  : random(70) * 1%;
-    //  left : random(90) * 1%;
-    //}
-    100% {
-      top  : $initY;
-      left : $initX;
-    }
+  @for $i from 1 through $max {
+	$animations: #{$animations + nth($animate, $i)};
+
+	@if $i < $max {
+	  $animations: #{$animations + ", "};
+	}
   }
-
-  -webkit-animation: randomFloat random(60)+30+s infinite ease-in-out;
+  -webkit-animation: $animations;
+  -moz-animation:    $animations;
+  -o-animation:      $animations;
+  animation:         $animations;
 }
 
+@mixin keyframes($animationName) {
+  @-webkit-keyframes #{$animationName} {
+	@content;
+  }
+  @-moz-keyframes #{$animationName} {
+	@content;
+  }
+  @-o-keyframes #{$animationName} {
+	@content;
+  }
+  @keyframes #{$animationName} {
+	@content;
+  }
+}

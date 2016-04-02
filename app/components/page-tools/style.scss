@@ -1,11 +1,11 @@
 .tools{
-  //background: $blue;
+  background: #201A23;
   position: relative;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,2d72b8+51,7db9e8+100&0+0,1+0,0+100 */
-  background: -moz-radial-gradient(center, ellipse cover,  rgba(30,87,153,1) 0%, rgba(45,114,184,0.49) 51%, rgba(125,185,232,0) 100%); /* FF3.6-15 */
-  background: -webkit-radial-gradient(center, ellipse cover,  rgba(30,87,153,1) 0%,rgba(45,114,184,0.49) 51%,rgba(125,185,232,0) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: radial-gradient(ellipse at center,  rgba(30,87,153,1) 0%,rgba(45,114,184,0.49) 51%,rgba(125,185,232,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#007db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  //background: -moz-radial-gradient(center, ellipse cover,  rgba(30,87,153,1) 0%, rgba(45,114,184,0.49) 51%, rgba(125,185,232,0) 100%); /* FF3.6-15 */
+  //background: -webkit-radial-gradient(center, ellipse cover,  rgba(30,87,153,1) 0%,rgba(45,114,184,0.49) 51%,rgba(125,185,232,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  //background: radial-gradient(ellipse at center,  rgba(30,87,153,1) 0%,rgba(45,114,184,0.49) 51%,rgba(125,185,232,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  //filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#007db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
 
   &:after{
@@ -49,22 +49,55 @@
     left: 0;
     right: 0;
 
+	@include break(md){
+	  position: relative;
+	  top: 0;
+
+	  // flexbox not supported in <IE10 | http://caniuse.com/#feat=flexbox
+	  @extend %flexbox;
+	  @include flex-wrap(wrap);
+	  @include justify-content(center);
+	}
+
     img{
-      max-width: 69px;
 	  position: absolute;
+
+	  @include break(md){
+		position: relative;
+		max-height: 45px;
+		display: block;
+		float: left;
+		margin: 0 18px 18px 0;
+	  }
     }
   }
 }
 
+/*
+Tool icons behavior
+*/
+@include break-min(md) {
+  /** For loop to target each image and assign random position **/
+  @for $i from 0 through 100 {
+	$rndm1 : random(75);
+	$rndm2 : random(90);
 
-/** For loop to target each image and assign random position **/
-@for $i from 0 through 100 {
-  $rndm1 : random(90);
-  $rndm2 : random(90);
+	// Define the keyframe
+	@include keyframes(randomFloat+#{$i}) {
+	  0% { transform : translate($rndm1+px, $rndm2+px); }
+	  20% { transform : translate(random(90)+px, random(90)+px); }
+	  40% { transform : translate(random(90)+px, random(90)+px); }
+	  100% { transform : translate($rndm1+px, $rndm2+px); }
+	}
 
-  .tools__container img[data-index="#{$i}"] {
-  	top : $rndm1 * 1%;
-  	left : $rndm2 * 1%;
-	@include randomFloater($rndm1,$rndm2);
+	.tools__container img[data-index="#{$i}"] {
+	  top       : $rndm1 * 1%;
+	  left      : $rndm2 * 1%;
+	  @include animation('randomFloat#{$i} #{random(60)+30}s infinite ease-in-out 0s');
+
+	  // Adjust size randomly
+	  min-width : 45px;
+	  max-width : $rndm1+19+px;
+	}
   }
 }

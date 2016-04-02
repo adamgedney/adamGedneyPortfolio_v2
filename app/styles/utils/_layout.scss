@@ -1,6 +1,17 @@
+
+body{
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100vh;
+  scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(220vh);
+  scroll-snap-destination: 50% 50%;
+}
+
 .page{
   @include col(12);
   position: relative;
+  scroll-snap-coordinate: 50% 50%;
 
   &__inner{
 	padding: 36px;
