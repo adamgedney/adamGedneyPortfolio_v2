@@ -1,0 +1,84 @@
+{
+  "_args": [
+    [
+      "jquery-scrollify",
+      "/Users/computer/Google Drive/_Projects/AdamGedney.com/Code/Sitev2"
+    ]
+  ],
+  "_from": "jquery-scrollify@*",
+  "_id": "jquery-scrollify@0.1.13",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/jquery-scrollify",
+  "_npmOperationalInternal": {
+    "host": "packages-13-west.internal.npmjs.com",
+    "tmp": "tmp/jquery-scrollify-0.1.13.tgz_1458763553297_0.24436033726669848"
+  },
+  "_npmUser": {
+    "email": "lukehaas7@gmail.com",
+    "name": "lukehaas"
+  },
+  "_npmVersion": "1.4.28",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "jquery-scrollify",
+    "raw": "jquery-scrollify",
+    "rawSpec": "",
+    "scope": null,
+    "spec": "*",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "#DEV:/"
+  ],
+  "_resolved": "https://registry.npmjs.org/jquery-scrollify/-/jquery-scrollify-0.1.13.tgz",
+  "_shasum": "75d003b00e2de7324a95badc8fbb671297638f70",
+  "_shrinkwrap": null,
+  "_spec": "jquery-scrollify",
+  "_where": "/Users/computer/Google Drive/_Projects/AdamGedney.com/Code/Sitev2",
+  "author": {
+    "name": "Luke Haas"
+  },
+  "bugs": {
+    "url": "https://github.com/lukehaas/Scrollify/issues"
+  },
+  "demo": "http://projects.lukehaas.me/scrollify",
+  "dependencies": {
+    "jquery": ">=1.6"
+  },
+  "description": "A jQuery plugin that assists scrolling and smoothly snaps to sections.",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "75d003b00e2de7324a95badc8fbb671297638f70",
+    "tarball": "https://registry.npmjs.org/jquery-scrollify/-/jquery-scrollify-0.1.13.tgz"
+  },
+  "gitHead": "6f114277f7477c878c1679c337853b881adaf407",
+  "homepage": "https://github.com/lukehaas/Scrollify",
+  "keywords": [
+    "ecosystem:jquery",
+    "jquery-plugin",
+    "page",
+    "scroll",
+    "snap"
+  ],
+  "license": "MIT",
+  "main": "jquery.scrollify.js",
+  "maintainers": [
+    {
+      "name": "lukehaas",
+      "email": "lukehaas7@gmail.com"
+    }
+  ],
+  "name": "jquery-scrollify",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukehaas/Scrollify.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.1.13"
+}

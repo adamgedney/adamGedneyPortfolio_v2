@@ -78,9 +78,6 @@ let $this,
 	component = {
 		route : '/',
 		willRender() {
-			// Set the "categories" property to a JavaScript object
-			// with the category name as the key and the value a list
-			// of products.
 			this.set('toolLogos', toolLogos);
 		},
 		rendered(that){
@@ -92,7 +89,7 @@ let $this,
 
 			// Set Properties/helpers
 			$this.setProperties(self.properties);
-console.log($this);
+
 			// Attach Event Handlers
 			self.attachHandlers();
 		},

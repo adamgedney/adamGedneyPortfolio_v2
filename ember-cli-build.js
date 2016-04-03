@@ -12,7 +12,7 @@ module.exports = function(defaults) {
     }
   });
 
-  app.import('vendor/scrollmagic/minified/ScrollMagic.min.js');
+  app.import('vendor/jquery-scrollify/jquery.scrollify.min.js');
 
   // Use `app.import` to add additional libraries to the generated
   // output files.

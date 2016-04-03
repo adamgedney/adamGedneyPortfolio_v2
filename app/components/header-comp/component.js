@@ -1,4 +1,5 @@
 import Ember from 'ember';
+//import ScrollMagic from 'npm:scrollmagic';
 
 const {getOwner} = Ember;
 
@@ -18,7 +19,7 @@ let $ = Ember.$,
 			// Set Properties/helpers
 			$this.setProperties(self.properties);
 
-			self.initScrollMagic();
+			//self.initScrollMagic();
 		},
 		properties : {
 			menuItems : Ember.computed(()=>{
@@ -44,13 +45,25 @@ let $ = Ember.$,
 				e.preventDefault();
 				console.log(e,'rrr');
 			});
+
+			self.initScrollify();
+		},
+
+		/**
+		 * Setup Scrollify plugin for smooth scrolling and snap
+		 */
+		initScrollify(){
+			Ember.$.scrollify({
+				section : ".page"
+				//sectionName : "section-name"
+			});
 		},
 
 		/**
 		 * Setup ScrollMagic controller
 		 */
 		initScrollMagic(){
-			// init controller
+			 //init controller
 			//var scrollMagicController = new ScrollMagic.Controller();
 			//
 			//// create a scene
