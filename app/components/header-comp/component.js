@@ -51,10 +51,12 @@ let $ = Ember.$,
 
 		/**
 		 * Setup Scrollify plugin for smooth scrolling and snap
+		 * http://projects.lukehaas.me/scrollify/#home
 		 */
 		initScrollify(){
 			Ember.$.scrollify({
-				section : ".page"
+				section : ".page",
+				standardScrollElements :".work"
 				//sectionName : "section-name"
 			});
 		},

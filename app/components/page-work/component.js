@@ -24,6 +24,103 @@ const projects = [
 				description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore'
 			}
 		]
+	},
+	{
+		title:'Trello Clone',
+		description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+		featuredImage:`http://placekitten.com/200/300`,
+		screenshots:[
+			{path:`http://placekitten.com/200/300`,
+				title:'Screenshot #1',
+				description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore'
+			}
+		]
+	},
+	{
+		title:'Trello Clone',
+		description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+		featuredImage:`http://placekitten.com/200/300`,
+		screenshots:[
+			{path:`http://placekitten.com/200/300`,
+				title:'Screenshot #1',
+				description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore'
+			}
+		]
+	},
+	{
+		title:'Trello Clone',
+		description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+		featuredImage:`http://placekitten.com/200/300`,
+		screenshots:[
+			{path:`http://placekitten.com/200/300`,
+				title:'Screenshot #1',
+				description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore'
+			}
+		]
+	},
+	{
+		title:'Trello Clone',
+		description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+		featuredImage:`http://placekitten.com/200/300`,
+		screenshots:[
+			{path:`http://placekitten.com/200/300`,
+				title:'Screenshot #1',
+				description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore'
+			}
+		]
+	},
+	{
+		title:'Trello Clone',
+		description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+		featuredImage:`http://placekitten.com/200/300`,
+		screenshots:[
+			{path:`http://placekitten.com/200/300`,
+				title:'Screenshot #1',
+				description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore'
+			}
+		]
+	},{
+		title:'Trello Clone',
+		description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+		featuredImage:`http://placekitten.com/200/300`,
+		screenshots:[
+			{path:`http://placekitten.com/200/300`,
+				title:'Screenshot #1',
+				description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore'
+			}
+		]
+	},
+	{
+		title:'Trello Clone',
+		description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+		featuredImage:`http://placekitten.com/200/300`,
+		screenshots:[
+			{path:`http://placekitten.com/200/300`,
+				title:'Screenshot #1',
+				description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore'
+			}
+		]
+	},{
+		title:'Trello Clone',
+		description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+		featuredImage:`http://placekitten.com/200/300`,
+		screenshots:[
+			{path:`http://placekitten.com/200/300`,
+				title:'Screenshot #1',
+				description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore'
+			}
+		]
+	},
+	{
+		title:'Trello Clone',
+		description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+		featuredImage:`http://placekitten.com/200/300`,
+		screenshots:[
+			{path:`http://placekitten.com/200/300`,
+				title:'Screenshot #1',
+				description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore'
+			}
+		]
 	}
 ];
 

@@ -5,7 +5,15 @@
         <div class="timeline__container">
             <ul>
                 {{#each projects as |project|}}
-                    <li class="timeline__item"><span class="timeline__itemMeta">{{project.title}}</span></li>
+                    <li class="timeline__item">
+                        <span class="timeline__itemTitle">{{project.title}}</span>
+
+                        <div class="timeline__itemMeta">
+                            <h2>{{project.title}}</h2>
+                            <p><img src="{{project.featuredImage}}" alt="{{project.title}}"/>
+                            {{project.description}}</p>
+                        </div>
+                    </li>
                 {{/each}}
             </ul>
         </div>

@@ -5,3 +5,71 @@
 
   }
 }
+
+.timeline{
+  &__container{
+    overflow-x:scroll;
+    white-space: nowrap;
+	margin-top: 7%;
+
+    ul{
+      position: relative;
+      height: 500px;
+	  padding-top: 100px;
+
+      &:before{
+        content :'';
+        background: $white;
+        height: 1px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50px;
+		width: 300%;
+      }
+    }
+  }
+
+  &__item{
+    position: relative;
+    display: inline-block;
+    width: 32.8%;
+    text-align: center;
+	color: $white;
+
+	height: 189px;
+	border: 1px solid white;
+	border-radius: 3px;
+
+    &:after{
+      content:'';
+      background: $white;
+      border-radius: 50%;
+      width: 12px;
+      height: 12px;
+      position: absolute;
+      top: -57px;
+      left: 47.4%;
+    }
+  }
+
+  &__itemTitle{
+	position: absolute;
+	top: -87px;
+	left: 0;
+	right: 0;
+  }
+
+  &__itemMeta{
+	h2{
+	  font-size: 18px;
+	}
+
+	p{
+	  img{
+		max-width: 124px;
+		float: left;
+	  }
+	}
+  }
+}
