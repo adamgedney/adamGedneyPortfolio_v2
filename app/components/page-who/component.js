@@ -5,6 +5,7 @@ const {getOwner} = Ember;
 let $ = Ember.$,
 	$this,
 	self,
+	bio,
 
 	component = {
 		route : '/',
@@ -24,8 +25,8 @@ let $ = Ember.$,
 			//self.initScrollMagic();
 		},
 		properties : {
-			projects : Ember.computed(()=>{
-				//return $this.projects;
+			bio : Ember.computed(()=>{
+				return bio;
 			})
 		},
 
@@ -53,3 +54,7 @@ export default Ember.Component.extend({
 	},
 	didInsertElement:component.handlers
 });
+
+
+bio = "<p>My name is Adam Gedney and I'm a Front End Developer who works on the full stack. I have a love for Javascript anything so I work on front end interactions, single page apps, and node back ends. I love building RESTful APIs in Express, but have more recently moved over to AWS for building APIs with a serverless client on S3.</p> <br />" +
+	"<p>My current stack is ES6, Babel via Gulp, with sass to style everything. As for frameworks, I work in Meteor and Ember2. I have dabbled in React and a few components in production, but I'm not 100% sold on the React opinion and would love to see more progress with the Web Components spec.</p>";

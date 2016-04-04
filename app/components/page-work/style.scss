@@ -1,5 +1,6 @@
 .work{
-  background: $bg-alt;
+  background: url(/images/texturedblack.png) no-repeat center center $bg-alt;
+  background-size: cover;
 
   .page__inner{
 

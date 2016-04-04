@@ -22,6 +22,12 @@
 	@include fadeColorTopDown(black);
   }
 
+  &__bioContainer{
+	p{
+	  text-indent: 5%;
+	}
+  }
+
 
   .page__inner{
     h2{
