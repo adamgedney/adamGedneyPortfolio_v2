@@ -61,6 +61,7 @@
 }
 
 
+
 /*
 Keyframe Animator
 src: http://joshbroton.com/quick-fix-sass-mixins-for-css-keyframe-animations/
@@ -106,4 +107,19 @@ Usage: first define the keyframe, then use it
   @keyframes #{$animationName} {
 	@content;
   }
+}
+
+
+
+
+/**
+Define title color animation keyframes
+**/
+@include keyframes(colorTransition) {
+  0% { color: $green; text-shadow: 0 0 8px $green;}
+  20% { color: $yellow; text-shadow: 0 0 8px $yellow;}
+  40% { color: $blue; text-shadow: 0 0 8px $blue;}
+  55% { color: $red; text-shadow: 0 0 8px $red;}
+  60% { color: $purple; text-shadow: 0 0 8px $purple;}
+  100% { color: $green; text-shadow: 0 0 8px $green;}
 }

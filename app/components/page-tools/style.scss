@@ -52,8 +52,6 @@
 	@include break(md){
 	  position: relative;
 	  top: 0;
-
-	  // flexbox not supported in <IE10 | http://caniuse.com/#feat=flexbox
 	  @extend %flexbox;
 	  @include flex-wrap(wrap);
 	  @include justify-content(center);

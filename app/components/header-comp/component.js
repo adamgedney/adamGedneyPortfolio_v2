@@ -24,12 +24,12 @@ let $ = Ember.$,
 		properties : {
 			menuItems : Ember.computed(()=>{
 				return [
-					{href:'#who',text:'Who I Am'},
-					{href:'#tools',text:'Tools'},
-					{href:'#work',text:'Work'},
-					{href:'#codepen',text:'Codepen'},
-					{href:'#video',text:'Video'},
-					{href:'#contact',text:'Contact'}
+					{href:'#who',text:'Who I Am',pageIndex:1},
+					{href:'#tools',text:'Tools',pageIndex:2},
+					{href:'#work',text:'Work',pageIndex:3},
+					//{href:'#codepen',text:'Codepen',pageIndex:1},
+					//{href:'#video',text:'Video',pageIndex:1},
+					{href:'#contact',text:'Contact',pageIndex:4}
 				];
 			})
 		},
@@ -40,13 +40,14 @@ let $ = Ember.$,
 		 */
 		handlers(){
 
+			self.initScrollify();
+
 			// Menu item click
 			$('.header__menuItem').click(function(e){
 				e.preventDefault();
-				console.log(e,'rrr');
+				Ember.$.scrollify.move(+$(this).attr('data-index'));
 			});
 
-			self.initScrollify();
 		},
 
 		/**

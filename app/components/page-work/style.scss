@@ -1,64 +1,80 @@
 .work{
-  background: url(/images/texturedblack.png) no-repeat center center $bg-alt;
-  background-size: cover;
+  background: $bg-alt;
 
   .page__inner{
-
+	//overflow-y: scroll;
   }
 }
 
 .timeline{
   &__container{
-    overflow-x:scroll;
-    white-space: nowrap;
-	margin-top: 7%;
+	height: 75%;
+	@include col(8);
+	@include col_ctr(8);
 
-    ul{
-      position: relative;
-      height: 500px;
-	  padding-top: 100px;
-
-      &:before{
-        content :'';
-        background: $white;
-        height: 1px;
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 50px;
-		width: 300%;
-      }
-    }
+	ul{
+	  height: 100%;
+	  overflow-y: scroll;
+	}
   }
 
   &__item{
-    position: relative;
-    display: inline-block;
-    width: 32.8%;
-    text-align: center;
-	color: $white;
+	width: 100%;
+	height: 100%;
+	background: no-repeat center center;
+	background-size: cover;
+	margin-bottom: 36px;
 
-	height: 189px;
-	border: 1px solid white;
-	border-radius: 3px;
+	&Heading{
+	  width: 100%;
+	  height: 100%;
+	  display: inline-block;
+	  text-align: center;
+	  line-height: 8;
+	  font-size: 96px;
+	  position: relative;
+	  @include animation('colorTransition 40s infinite #{$ef-linear} 0s');
 
-    &:after{
-      content:'';
-      background: $white;
-      border-radius: 50%;
-      width: 12px;
-      height: 12px;
-      position: absolute;
-      top: -57px;
-      left: 47.4%;
-    }
+	  &:after{
+		content: $fa-var-chevron-down;
+		font-family: FontAwesome;
+		position: absolute;
+		top: 42%;
+		color: lighten($black,10%);
+		text-shadow: none;
+		font-size: 45px;
+		text-align: center;
+		width: 100%;
+		display: block;
+	  }
+	}
+
+	a{
+	  text-decoration: none;
+	}
   }
 
   &__itemTitle{
-	position: absolute;
-	top: -87px;
-	left: 0;
-	right: 0;
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	text-align: center;
+	line-height: 8;
+	font-size: 96px;
+	position: relative;
+	color: $white;
+	z-index: 0;
+
+	&:before{
+	  content: '';
+	  position: absolute;
+	  top: 0;
+	  right: 0;
+	  bottom: 0;
+	  left: 0;
+	  background: rgba(0,0,0,0.6);
+	  z-index: -1;
+	}
   }
 
   &__itemMeta{
@@ -74,3 +90,10 @@
 	}
   }
 }
+
+
+//<div class="timeline__itemMeta">
+//<h2>{{project.title}}</h2>
+//<p><img src="{{project.featuredImage}}" alt="{{project.title}}"/>
+//																{{project.description}}</p>
+//</div>
