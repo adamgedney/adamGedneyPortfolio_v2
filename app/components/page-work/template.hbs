@@ -8,7 +8,7 @@
                     <span class="timeline__itemHeading">WORK</span>
                 </li>
                 {{#each projects as |project|}}
-                    <li class="timeline__item" style="background-image: url({{project.featuredImage}});">
+                    <li class="timeline__item" {{action setCurrentProject project.id}} data-projectID="{{project.id}}" style="background-image: url({{project.featuredImage}});">
                         <a href="#">
                             <span class="timeline__itemTitle">{{project.title}}</span>
                         </a>
@@ -17,4 +17,18 @@
             </ul>
         </div>
     </div>
+
+    <!-- Project-post-->
+    {{#if showProjectDetail}}
+        <div class="projectPost">
+            <div class="projectPost__inner">
+                <div class="projectPost--close" {{action toggleDetail}}></div>
+                <div class="projectPost__details">
+                    <h1>{{currentProject.title}} {{currentProject.id}}</h1>
+                    <p>{{currentProject.description}}</p>
+                    <img src="{{currentProject.featuredImage}}" alt="{{currentProject.title}}"/>
+                </div>
+            </div>
+        </div>
+    {{/if}}
 </div>
