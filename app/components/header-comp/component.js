@@ -1,5 +1,5 @@
 import Ember from 'ember';
-//import ScrollMagic from 'npm:scrollmagic';
+import ScrollMagic from 'npm:scrollmagic';
 
 const {getOwner} = Ember;
 
@@ -19,7 +19,7 @@ let $ = Ember.$,
 			// Set Properties/helpers
 			$this.setProperties(self.properties);
 
-			//self.initScrollMagic();
+			self.initScrollMagic();
 		},
 		properties : {
 			menuItems : Ember.computed(()=>{
@@ -40,12 +40,12 @@ let $ = Ember.$,
 		 */
 		handlers(){
 
-			self.initScrollify();
+			//self.initScrollify();
 
 			// Menu item click
 			$('.header__menuItem').click(function(e){
-				e.preventDefault();
-				Ember.$.scrollify.move(+$(this).attr('data-index'));
+				//e.preventDefault();
+				//Ember.$.scrollify.move(+$(this).attr('data-index'));
 			});
 
 		},
@@ -67,16 +67,16 @@ let $ = Ember.$,
 		 */
 		initScrollMagic(){
 			 //init controller
-			//var scrollMagicController = new ScrollMagic.Controller();
-			//
-			//// create a scene
-			//new ScrollMagic.Scene({
-			//	triggerElement : '.who',
-			//	duration: 100,  // the scene should last for a scroll distance of 100px
-			//	offset: 50      // start this scene after scrolling for 50px
-			//})
-			//	.setPin(".who h2") // pins the element for the the scene's duration
-			//	.addTo(scrollMagicController); // assign the scene to the controller
+			let scrollMagicController = new ScrollMagic.Controller();
+
+			// create a scene
+			new ScrollMagic.Scene({
+				//triggerElement : '#who',
+				//duration: 100,  // the scene should last for a scroll distance of 100px
+				//offset: 50      // start this scene after scrolling for 50px
+			})
+				.setClassToggle("#who", "animated fadeInLeft")
+				.addTo(scrollMagicController); // assign the scene to the controller
 		}
 	};
 

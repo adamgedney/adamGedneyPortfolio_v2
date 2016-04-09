@@ -3,8 +3,21 @@
     <div class="page__inner">
         <h2>Contact Me</h2>
 
-        <div class="contact__videoWrapper">
-            <iframe id="contact__videoBG" width="560" height="315" src="https://www.youtube.com/embed/eGD-5jYR9jk?autoplay=1&controls=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=0&enablejsapi=1" frameborder="0" volume="0" allowfullscreen></iframe>
-        </div>
+        <!--<div class="contact__videoWrapper">-->
+            <!--<iframe id="contact__videoBG" width="560" height="315" src="https://www.youtube.com/embed/eGD-5jYR9jk?autoplay=1&controls=0&iv_load_policy=3&loop=1&modestbranding=1&rel=0&showinfo=0&enablejsapi=1" frameborder="0" volume="0" allowfullscreen></iframe>-->
+        <!--</div>-->
+
+        <form class="contact__form" action="#">
+            <label for="name">Your Name</label>
+            <input type="text" name="name" placeholder="Your Name" required/>
+
+            <label for="email">Your Email Address</label>
+            <input type="email" name="email" placeholder="Your Email Address" required/>
+
+            <label for="message">What would you like to say?</label>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+
+            <input type="submit" value="Submit" {{action submitForm}}/>
+        </form>
     </div>
 </div>

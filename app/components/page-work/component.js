@@ -1,6 +1,8 @@
 import Ember from 'ember';
 import _ from 'npm:underscore';
 import Promise from 'npm:bluebird';
+import ScrollMagic from 'npm:scrollmagic';
+
 
 const {getOwner} = Ember;
 const imagePath = '/images/codeTools/';
@@ -11,9 +13,37 @@ const projects = [
 		description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
 		featuredImage:`http://placekitten.com/1200/900`,
 		screenshots:[
-			{path:`http://placekitten.com/200/300`,
+			{path:`http://placekitten.com/500/400`,
 				title:'Screenshot #1',
-				description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore'
+				description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboreLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboreLorem ipsum dolor sit amet, consectetur adipiscing elit,',
+				features : [
+					{description: 'Javascript, HTML5, CSS3, Sass', subDescription:'ES6'},
+					{description: 'Javascript', subDescription:'ES6'},
+					{description: 'Javascript', subDescription:'ES6'},
+					{description: 'Javascript', subDescription:'ES6'},
+				]
+			},
+			{path:`http://placekitten.com/500/400`,
+				title:'Screenshot #1',
+				description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore',
+				features : [
+					{description: 'Javascript', subDescription:'ES6'},
+					{description: 'Javascript', subDescription:'ES6'},
+					{description: 'Javascript', subDescription:'ES6'},
+					{description: 'Javascript', subDescription:'ES6'}
+				]
+			},
+			{path:`http://placekitten.com/500/400`,
+				title:'Screenshot #1',
+				description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore',
+				features : [
+					{description: 'Javascript', subDescription:'ES6'},
+					{description: 'Javascript', subDescription:'ES6'},
+					{description: 'Javascript', subDescription:'ES6'},
+					{description: 'Javascript', subDescription:'ES6'},
+					{description: 'Javascript', subDescription:'ES6'},
+					{description: 'Javascript', subDescription:'ES6'},
+				]
 			}
 		]
 	},
@@ -209,6 +239,23 @@ let $ = Ember.$,
 		 */
 		toggleDetail($this){
 			$this.set('showProjectDetail',!$this.get('showProjectDetail'));
+		},
+
+		/**
+		 * Setup ScrollMagic controller
+		 */
+		initScrollMagic(){
+			//init controller
+			var scrollMagicController = new ScrollMagic.Controller();
+
+			// create a scene
+			new ScrollMagic.Scene({
+				triggerElement : '.screenshot__group',
+				duration: 100,  // the scene should last for a scroll distance of 100px
+				offset: 50      // start this scene after scrolling for 50px
+			})
+				.setPin(".screenshot__group p") // pins the element for the the scene's duration
+				.addTo(scrollMagicController); // assign the scene to the controller
 		}
 
 	};
@@ -221,7 +268,7 @@ export default Ember.Component.extend({
 
 		component.rendered(this);
 	},
-	didInsertElement:component.handlers,
+	//didInsertElement:component.handlers,
 	toggleDetail : component.handler.toggleDetail,
 	setCurrentProject : component.handler.setCurrentProject
 });

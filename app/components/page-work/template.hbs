@@ -24,9 +24,24 @@
             <div class="projectPost__inner">
                 <div class="projectPost--close" {{action toggleDetail}}></div>
                 <div class="projectPost__details">
-                    <h1>{{currentProject.title}} {{currentProject.id}}</h1>
-                    <p>{{currentProject.description}}</p>
-                    <img src="{{currentProject.featuredImage}}" alt="{{currentProject.title}}"/>
+                    <h1 class="animated flipInY">{{currentProject.title}} {{currentProject.id}}</h1>
+                    <p class="animated flipInX">{{currentProject.description}}</p>
+
+                    <div class="screenshot__wrapper animated fadeInUp">
+                        {{#each currentProject.screenshots as |shot|}}
+                            <div class="screenshot__group" style="background-image: url({{shot.path}});">
+                                <div class="screenshot__group__inner">
+                                    <h2 class="animated fadeInLeftBig">{{shot.title}}</h2>
+                                    <ul>
+                                    {{#each shot.features as |feature|}}
+                                        <li title="{{feature.subDescription}}">{{feature.description}}</li>
+                                    {{/each}}
+                                    </ul>
+                                    <p class="animated fadeInRightBig">{{{shot.description}}}</p>
+                                </div>
+                            </div>
+                        {{/each}}
+                    </div>
                 </div>
             </div>
         </div>
