@@ -121,6 +121,19 @@
   filter: blur($val);
 }
 
+/*
+* Usage: @include faPseudo($fa-var-times,0,0,0,0);
+*/
+@mixin faPseudo($var,$top,$right,$bottom,$left){
+  content: $var;
+  position: absolute;
+  font-family: FontAwesome;
+  top: $top;
+  right: $right;
+  bottom : $bottom;
+  left: $left;
+}
+
 
 
 

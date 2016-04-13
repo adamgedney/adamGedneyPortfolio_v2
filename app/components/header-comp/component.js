@@ -69,13 +69,12 @@ let $ = Ember.$,
 			 //init controller
 			let scrollMagicController = new ScrollMagic.Controller();
 
-			// create a scene
 			new ScrollMagic.Scene({
-				//triggerElement : '#who',
-				//duration: 100,  // the scene should last for a scroll distance of 100px
-				//offset: 50      // start this scene after scrolling for 50px
+				triggerElement : '#work',
+				duration: 100,  // the scene should last for a scroll distance of 100px
+				offset: 50      // start this scene after scrolling for 50px
 			})
-				.setClassToggle("#who", "animated fadeInLeft")
+				.setPin(".timeline__itemTitle") // pins the element for the the scene's duration
 				.addTo(scrollMagicController); // assign the scene to the controller
 		}
 	};

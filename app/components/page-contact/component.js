@@ -40,7 +40,7 @@ let $ = Ember.$,
 					.then(self.mailer.sendForm)
 					.then(self.mailer.clearForm)
 					.then(()=>{
-						alert('Form sent');
+						alert('Contact Form Sent. Thanks!');
 					});
 			}
 

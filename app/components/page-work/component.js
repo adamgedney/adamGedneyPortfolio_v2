@@ -187,6 +187,9 @@ let $ = Ember.$,
 			// Set Properties/helpers
 			$this.setProperties(self.properties);
 			$this.set('showProjectDetail',false);
+
+			//self.initScrollMagic();
+
 		},
 
 		properties : {
@@ -250,11 +253,11 @@ let $ = Ember.$,
 
 			// create a scene
 			new ScrollMagic.Scene({
-				triggerElement : '.screenshot__group',
+				triggerElement : '#work',
 				duration: 100,  // the scene should last for a scroll distance of 100px
 				offset: 50      // start this scene after scrolling for 50px
 			})
-				.setPin(".screenshot__group p") // pins the element for the the scene's duration
+				.setPin(".timeline__itemTitle") // pins the element for the the scene's duration
 				.addTo(scrollMagicController); // assign the scene to the controller
 		}
 
