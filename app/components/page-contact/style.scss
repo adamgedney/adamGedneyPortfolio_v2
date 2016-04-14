@@ -5,6 +5,26 @@
 	h2{
 	  color: $text-primary;
 	  font-size: 87px;
+	  position: relative;
+	  background: $bg-secondary;
+
+	  &:before,
+	  &:after{
+		content: '';
+		width: 25%;
+		height: 1px;
+		background: rgba($danger,0.5);
+		position: absolute;
+		left: 0;
+		top: 52%;
+		right: 0;
+		bottom: 0;
+	  }
+
+	  &:after{
+		left: unset;
+		right: 0;
+	  }
 	}
   }
 

@@ -4,11 +4,11 @@
 
   .page__inner{
 	//overflow-y: scroll;
-	&:before{
-	  content: '';
-	  @include fadeColorBottomUp($bg-secondary);
-	  z-index: 1;
-	}
+	//&:before{
+	//  content: '';
+	//  @include fadeColorBottomUp($bg-secondary);
+	//  z-index: 1;
+	//}
   }
 }
 
@@ -46,6 +46,7 @@
 	  box-shadow: 0 0 3px rgba(0,0,0,0.9);
 	  border-radius: 6px;
 	  @include duration(0.2s);
+	  z-index: 2;
 	}
 
 	//&Heading{
