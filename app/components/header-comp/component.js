@@ -56,7 +56,8 @@ let $ = Ember.$,
 		 */
 		initScrollify(){
 			Ember.$.scrollify({
-				section : ".page"
+				section : ".page",
+				standardScrollElements :".work"
 				//sectionName : "section-name"
 			});
 		},
