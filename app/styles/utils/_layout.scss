@@ -15,8 +15,8 @@ body{
 
   &__inner{
 	padding: 36px;
-    height: 600px;
-    height: 94vh;
+    min-height: 600px;
+    min-height: 94vh;
     position: relative;
   }
 }

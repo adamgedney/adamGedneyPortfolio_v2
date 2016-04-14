@@ -192,19 +192,73 @@ let $ = Ember.$,
 
 		},
 
+		/**
+		 * Template loaded
+		 */
+		afterRenderEvent(){
+			self.handler.attach();
+		},
+
 		properties : {
 			projects : Ember.computed(()=>projects),
 			showProjectDetail: Ember.computed(()=>false),
-			currentProject: Ember.computed(()=>{}),
+			currentProject: Ember.computed(()=>{})
 		},
 
 		/**
 		 * Event handlers
 		 */
 		handler : {
+			// Generic jquery handlers
+			attach(){
+				const offset = 300,// sets init value to comfortable visual trigger before container
+					  initTimelineContainerAt = Math.floor($('#work').position().top - offset),
+					  $container = $('.timeline__container'),
+					  $items = $('.timeline__item');
+
+				let firstRun = true;
+
+				// When we reach the scroll point, trigger animations on work container
+				$(document).on('scroll',function(){
+
+					self.scrollPointReached(initTimelineContainerAt,
+						Math.floor($('body').scrollTop()),
+						firstRun,
+						()=>{//callback on In
+
+							const params = {
+								$container,
+								$items,
+								direction :'in'
+							};
+
+							self.animateInContainer(params)
+								.then(self.animateItems);
+							firstRun = false;
+
+						},()=>{//callback on Out
+
+							const params = {
+								$container,
+								$items,
+								direction :'out'
+							};
+
+							// reset appearance on scroll out
+							self.animateItems(params)
+								.then(self.resetWorkContainer);
+							firstRun = true;
+					});//on Out
+				});
+
+				//// Hover over work item
+				//$(document).on('mouseenter','#work',function(){
+				//	self.animateItems($('.timeline__item'));
+				//});
+			},
+
 			toggleDetail(){
 				component.toggleDetail(this);
-				//this.set('showProjectDetail',!this.get('showProjectDetail'));
 			},
 
 			setCurrentProject(projectID){
@@ -247,20 +301,89 @@ let $ = Ember.$,
 		/**
 		 * Setup ScrollMagic controller
 		 */
-		initScrollMagic(){
-			//init controller
-			var scrollMagicController = new ScrollMagic.Controller();
+		//initScrollMagic(){
+		//	//init controller
+		//	var scrollMagicController = new ScrollMagic.Controller();
+		//
+		//	// create a scene
+		//	new ScrollMagic.Scene({
+		//		triggerElement : '#work',
+		//		duration: 100,  // the scene should last for a scroll distance of 100px
+		//		offset: 50      // start this scene after scrolling for 50px
+		//	})
+		//		.setPin(".timeline__itemTitle") // pins the element for the the scene's duration
+		//		.addTo(scrollMagicController); // assign the scene to the controller
+		//},
 
-			// create a scene
-			new ScrollMagic.Scene({
-				triggerElement : '#work',
-				duration: 100,  // the scene should last for a scroll distance of 100px
-				offset: 50      // start this scene after scrolling for 50px
-			})
-				.setPin(".timeline__itemTitle") // pins the element for the the scene's duration
-				.addTo(scrollMagicController); // assign the scene to the controller
+		/**
+		 * Animate in the work items container
+		 * @param args
+		 */
+		animateInContainer : args=>new Promise((resolve,reject)=>{
+			args.$container.attr('class','timeline__container timeline__container--show ');
+
+			resolve(Object.assign({},args));
+		}),
+
+		/**
+		 * add animations to item entrances
+		 * @param $items
+		 */
+		animateItems : args=>new Promise((resolve,reject)=>{
+			const animationsIn = ['fadeInUp','fadeInDownBig', 'fadeInLeft','fadeInRight','bounceInUp','bounceInDown',
+			'bounceInLeft','bounceInRight','flipInX','flipInY','slideInUp','slideInLeft','slideInDown','slideInRight'],
+					animationsOut = ['fadeOutUp','fadeOutDown', 'fadeOutLeft','fadeOutRight','bounceOutDown',
+				'bounceOutLeft','bounceOutRight','flipOutX','flipOutY','slideOutUp','slideOutLeft','slideOutRight'];
+
+			let animations = animationsOut;
+
+			// Set animation direction
+			if(args.direction === 'in'){
+				animations = animationsIn;
+			}
+
+			args.$items.each(function(){
+				const animation = Math.floor(Math.random() * animations.length);
+
+				// Rmeove all residual animation classes & add new animation
+				$(this).attr('class', 'animated timeline__item');
+				$(this).addClass(animations[animation]);
+			});
+
+
+			// Delay resolve until animations have finished, on out
+			if(args.direction === 'out'){
+				setTimeout(()=>{
+					resolve(Object.assign({},args));
+				},1000);
+			}else{
+				resolve(Object.assign({},args));
+			}
+		}),
+
+		/**
+		 * Remove animation classes and hide container
+		 */
+		resetWorkContainer(args){
+			args.$container.attr('class','timeline__container');
+		},
+
+		/**
+		 * Handler for triggering at a scroll point
+		 * @param initAt
+		 * @param scrollTop
+		 * @param firstRun
+		 * @param cb
+		 */
+		scrollPointReached(initAt,scrollTop,firstRun,cbIn,cbOut){
+			if(initAt < scrollTop && firstRun){
+				cbIn();
+			}
+
+			if(initAt > scrollTop && !firstRun){
+				cbOut();
+			}
 		}
-
 	};
 
 // Export Component
@@ -271,6 +394,11 @@ export default Ember.Component.extend({
 
 		component.rendered(this);
 	},
+	didInsertElement(){
+		// Important for manipulating DOM after render
+		Ember.run.scheduleOnce('afterRender', this, this.afterRenderEvent);
+	},
+	afterRenderEvent : component.afterRenderEvent,
 	//didInsertElement:component.handlers,
 	toggleDetail : component.handler.toggleDetail,
 	setCurrentProject : component.handler.setCurrentProject

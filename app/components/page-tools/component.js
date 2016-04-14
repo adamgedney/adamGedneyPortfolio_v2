@@ -16,7 +16,7 @@ const toolLogos = [
 	{path:imagePath + 'aws-logo.png',alt:'AWS'},
 	{path:imagePath + 'babel.png',alt:'Babel'},
 	{path:imagePath + 'bitbucket.png',alt:'Bitbucket'},
-	{path:imagePath + 'bluebird.png',alt:'Bluebird'},
+	//{path:imagePath + 'bluebird.png',alt:'Bluebird'},
 	{path:imagePath + 'bower.png',alt:'Bower'},
 	{path:imagePath + 'chrome.png',alt:'Chrome'},
 	{path:imagePath + 'cloudFront-small.png',alt:'AWS Cloudfront'},

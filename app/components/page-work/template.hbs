@@ -4,11 +4,8 @@
         <h2>What Does My Work Look Like?</h2>
         <div class="timeline__container">
             <ul>
-                <li class="timeline__item">
-                    <span class="timeline__itemHeading">WORK</span>
-                </li>
                 {{#each projects as |project|}}
-                    <li class="timeline__item" {{action setCurrentProject project.id}} data-projectID="{{project.id}}" style="background-image: url({{project.featuredImage}});">
+                    <li class="timeline__item animated" {{action setCurrentProject project.id}} data-projectID="{{project.id}}" style="background-image: url({{project.featuredImage}});">
                         <a href="#">
                             <span class="timeline__itemTitle">{{project.title}}</span>
                         </a>

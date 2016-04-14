@@ -19,7 +19,7 @@ let $ = Ember.$,
 			// Set Properties/helpers
 			$this.setProperties(self.properties);
 
-			self.initScrollMagic();
+			//self.initScrollMagic();
 		},
 		properties : {
 			menuItems : Ember.computed(()=>{
