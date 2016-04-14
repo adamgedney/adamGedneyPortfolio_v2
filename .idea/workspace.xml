@@ -3,12 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="c99ab72b-2fb7-4986-9ee0-30b295e16d13" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/header-comp/component.js" afterPath="$PROJECT_DIR$/app/components/header-comp/component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/page-tools/component.js" afterPath="$PROJECT_DIR$/app/components/page-tools/component.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/header-comp/style.scss" afterPath="$PROJECT_DIR$/app/components/header-comp/style.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/page-contact/style.scss" afterPath="$PROJECT_DIR$/app/components/page-contact/style.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/page-fold/style.scss" afterPath="$PROJECT_DIR$/app/components/page-fold/style.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/page-fold/template.hbs" afterPath="$PROJECT_DIR$/app/components/page-fold/template.hbs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/page-work/component.js" afterPath="$PROJECT_DIR$/app/components/page-work/component.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/page-work/style.scss" afterPath="$PROJECT_DIR$/app/components/page-work/style.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/page-work/template.hbs" afterPath="$PROJECT_DIR$/app/components/page-work/template.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/utils/_layout.scss" afterPath="$PROJECT_DIR$/app/styles/utils/_layout.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/pods.scss" afterPath="$PROJECT_DIR$/app/styles/pods.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/utils/_util.scss" afterPath="$PROJECT_DIR$/app/styles/utils/_util.scss" />
     </list>
     <ignored path="testember.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,21 +31,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pods.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="pods.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/styles/pods.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.0">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.31914893">
+              <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="component.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="component.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/components/page-work/component.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2495379">
-              <caret line="213" column="100" selection-start-line="213" selection-start-column="100" selection-end-line="213" selection-end-column="100" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="351" column="75" selection-start-line="351" selection-start-column="75" selection-end-line="351" selection-end-column="75" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_color.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/styles/_color.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-23.125">
+              <caret line="53" column="23" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/components/page-contact/style.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.625">
+              <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -64,8 +86,8 @@
       <file leaf-file-name="style.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/components/page-work/style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.25">
-              <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+            <state vertical-scroll-proportion="-6.875">
+              <caret line="35" column="24" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -93,7 +115,6 @@
         <option value="$PROJECT_DIR$/app/styles/app.scss" />
         <option value="$PROJECT_DIR$/app/styles/app.scss" />
         <option value="$PROJECT_DIR$/app/styles/utils/_media-queries.scss" />
-        <option value="$PROJECT_DIR$/app/components/page-fold/template.hbs" />
         <option value="$PROJECT_DIR$/app/components/page-codepen/template.hbs" />
         <option value="$PROJECT_DIR$/app/components/page-video/template.hbs" />
         <option value="$PROJECT_DIR$/app/components/page-tools/template.hbs" />
@@ -107,20 +128,17 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/app/routes/index.js" />
         <option value="$PROJECT_DIR$/app/components/footer-comp/style.scss" />
-        <option value="$PROJECT_DIR$/app/components/page-contact/style.scss" />
         <option value="$PROJECT_DIR$/app/styles/utils/_typography.scss" />
         <option value="$PROJECT_DIR$/app/components/page-who/bio.js" />
         <option value="$PROJECT_DIR$/app/components/page-who/component.js" />
         <option value="$PROJECT_DIR$/app/components/page-tools/style.scss" />
         <option value="$PROJECT_DIR$/app/components/page-who/style.scss" />
-        <option value="$PROJECT_DIR$/app/components/page-fold/style.scss" />
         <option value="$PROJECT_DIR$/app/components/header-comp/template.hbs" />
         <option value="$PROJECT_DIR$/app/components/header-comp/template.hbs" />
         <option value="$PROJECT_DIR$/app/components/project-post/template.hbs" />
         <option value="$PROJECT_DIR$/app/components/project-post/component.js" />
         <option value="$PROJECT_DIR$/app/components/project-post/style.scss" />
         <option value="$PROJECT_DIR$/app/styles/utils/_base-rules.scss" />
-        <option value="$PROJECT_DIR$/app/components/header-comp/style.scss" />
         <option value="$PROJECT_DIR$/app/styles/_color.scss" />
         <option value="$PROJECT_DIR$/app/styles/utils/_animations.scss" />
         <option value="$PROJECT_DIR$/app/styles/libs/_imports.scss" />
@@ -128,15 +146,19 @@
         <option value="$PROJECT_DIR$/app/components/page-contact/component.js" />
         <option value="$PROJECT_DIR$/app/components/page-contact/template.hbs" />
         <option value="$PROJECT_DIR$/app/components/header-comp/component.js" />
-        <option value="$PROJECT_DIR$/app/styles/utils/_util.scss" />
         <option value="$PROJECT_DIR$/app/styles/utils/_layout.scss" />
-        <option value="$PROJECT_DIR$/app/styles/pods.scss" />
         <option value="$PROJECT_DIR$/app/components/page-work/template.hbs" />
         <option value="$PROJECT_DIR$/app/components/header-comp/component.js" />
         <option value="$PROJECT_DIR$/app/components/page-tools/component.js" />
-        <option value="$PROJECT_DIR$/app/components/page-work/style.scss" />
-        <option value="$PROJECT_DIR$/app/styles/pods.scss" />
         <option value="$PROJECT_DIR$/app/components/page-work/component.js" />
+        <option value="$PROJECT_DIR$/app/components/page-fold/template.hbs" />
+        <option value="$PROJECT_DIR$/app/components/header-comp/style.scss" />
+        <option value="$PROJECT_DIR$/app/components/page-fold/style.scss" />
+        <option value="$PROJECT_DIR$/app/styles/pods.scss" />
+        <option value="$PROJECT_DIR$/app/components/page-work/style.scss" />
+        <option value="$PROJECT_DIR$/app/styles/utils/_util.scss" />
+        <option value="$PROJECT_DIR$/app/components/page-contact/style.scss" />
+        <option value="$PROJECT_DIR$/app/styles/pods.scss" />
       </list>
     </option>
   </component>
@@ -352,6 +374,50 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="page-fold" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="testember" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sitev2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="page-contact" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="testember" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sitev2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="header-comp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -537,13 +603,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/page-fold/template.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09375">
-          <caret line="3" column="47" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/components/page-codepen/template.hbs">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.09375">
@@ -694,13 +753,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/page-contact/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.0">
-          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/styles/utils/_typography.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4875">
@@ -729,13 +781,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/page-fold/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.65625">
-          <caret line="59" column="76" selection-start-line="59" selection-start-column="7" selection-end-line="59" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/components/header-comp/template.hbs">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.15625">
@@ -761,24 +806,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6923077">
           <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/header-comp/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14506769">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-          <folding>
-            <element signature="e#195#1267#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/_color.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.25">
-          <caret line="53" column="23" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -820,14 +847,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/utils/_util.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17988394">
-          <caret line="96" column="45" selection-start-line="96" selection-start-column="45" selection-end-line="96" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/styles/utils/_layout.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.52224374">
@@ -852,6 +871,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/page-tools/component.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.52680224">
+          <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/components/page-work/template.hbs">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.5">
@@ -862,34 +889,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/page-tools/component.js">
+    <entry file="file://$PROJECT_DIR$/app/components/header-comp/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.52680224">
-          <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+        <state vertical-scroll-proportion="0.26112187">
+          <caret line="101" column="16" selection-start-line="101" selection-start-column="16" selection-end-line="101" selection-end-column="16" />
+          <folding>
+            <element signature="e#195#1267#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/page-fold/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.63265306">
+          <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/page-fold/template.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.08704062">
+          <caret line="3" column="85" selection-start-line="3" selection-start-column="85" selection-end-line="3" selection-end-column="85" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/components/page-work/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.25">
-          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+        <state vertical-scroll-proportion="-6.875">
+          <caret line="35" column="24" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/pods.scss">
+    <entry file="file://$PROJECT_DIR$/app/styles/utils/_util.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.0">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.029013539">
+          <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/components/page-work/component.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2495379">
-          <caret line="213" column="100" selection-start-line="213" selection-start-column="100" selection-end-line="213" selection-end-column="100" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="351" column="75" selection-start-line="351" selection-start-column="75" selection-end-line="351" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/_color.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-23.125">
+          <caret line="53" column="23" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/page-contact/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.625">
+          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/pods.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31914893">
+          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
           <folding />
         </state>
       </provider>

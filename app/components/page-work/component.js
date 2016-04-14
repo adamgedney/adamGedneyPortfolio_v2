@@ -348,6 +348,11 @@ let $ = Ember.$,
 				// Rmeove all residual animation classes & add new animation
 				$(this).attr('class', 'animated timeline__item');
 				$(this).addClass(animations[animation]);
+
+				// Reset after animation to prevent css transform conflicts
+				setTimeout(()=>{
+					$(this).attr('class', 'animated timeline__item');
+				},1000);
 			});
 
 

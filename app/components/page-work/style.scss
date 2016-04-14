@@ -33,6 +33,14 @@
 	//max-height: 681px;
 	background: no-repeat center center;
 	background-size: cover;
+	@include duration();
+
+	&:hover{
+	  transform: scale(1.02,1.02);
+	  box-shadow: 0 0 3px rgba(0,0,0,0.9);
+	  border-radius: 6px;
+	  @include duration(0.2s);
+	}
 
 	//&Heading{
 	//  width: 100%;
@@ -86,7 +94,7 @@
 	  right: 0;
 	  bottom: 0;
 	  left: 0;
-	  background: rgba(0,0,0,0.6);
+	  //background: rgba(0,0,0,0.6);
 	  z-index: -1;
 	}
   }
