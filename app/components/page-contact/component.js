@@ -20,6 +20,11 @@ let $ = Ember.$,
 			// Set Properties/helpers
 			$this.setProperties(self.properties);
 		},
+
+		afterRenderEvent(){
+			self.map.initialize();
+		},
+
 		properties : {
 			items : Ember.computed(()=>{
 				return [];
@@ -99,6 +104,43 @@ let $ = Ember.$,
 				});
 				resolve(Object.assign({},args));
 			})
+		},
+
+		map :{
+			// Google maps
+			initialize() {
+				console.log(window);
+				// Source: http://stiern.com/tutorials/adding-custom-google-maps-to-your-website/
+				var latlng = new google.maps.LatLng(26.7097, -80.0642);
+
+				var settings = {
+					zoom: 6,
+					scrollwheel: false,
+					center: latlng,
+					mapTypeControl: true,
+					mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU},
+					navigationControl: true,
+					navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL},
+					mapTypeId: google.maps.MapTypeId.ROADMAP
+				};
+
+				var map = new google.maps.Map(document.getElementById("map"), settings);
+
+				var companyLogo = new google.maps.MarkerImage('images/pin-marker.png',
+					new google.maps.Size(451,118),
+					new google.maps.Point(0,0),
+					new google.maps.Point(0,118)
+				);
+
+				var companyPos = new google.maps.LatLng(26.7097, -80.0642);
+
+				var companyMarker = new google.maps.Marker({
+					position: companyPos,
+					map: map,
+					icon: companyLogo,
+					title:"Right here!"
+				});
+			}// /initialize()
 		}
 	};
 
@@ -109,5 +151,10 @@ export default Ember.Component.extend({
 
 		component.rendered(this);
 	},
+	didInsertElement(){
+		// Important for manipulating DOM after render
+		Ember.run.scheduleOnce('afterRender', this, this.afterRenderEvent);
+	},
+	afterRenderEvent : component.afterRenderEvent,
 	submitForm : component.handler.submitForm
 });

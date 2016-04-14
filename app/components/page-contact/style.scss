@@ -2,6 +2,10 @@
   background: $bg;
 
   .page__inner{
+	h2{
+	  color: $text-primary;
+	  font-size: 87px;
+	}
   }
 
   &__videoWrapper{

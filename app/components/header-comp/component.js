@@ -40,7 +40,7 @@ let $ = Ember.$,
 		 */
 		handlers(){
 
-			//self.initScrollify();
+			self.initScrollify();
 
 			// Menu item click
 			$('.header__menuItem').click(function(e){
@@ -56,8 +56,7 @@ let $ = Ember.$,
 		 */
 		initScrollify(){
 			Ember.$.scrollify({
-				section : ".page",
-				standardScrollElements :".work"
+				section : ".page"
 				//sectionName : "section-name"
 			});
 		},
