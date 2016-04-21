@@ -172,10 +172,189 @@ const projects = [
 			{path:`/images/work/jericho/label-ootoppic.png`,
 				title:'Wine Label Work',
 				description:''
-			},
+			}
 		]
 	},
-
+	{
+		id : 5,
+		title:'Loloi Rugs',
+		description:'Custom site built on .Net',
+		featuredImage:`/images/work/loloi/loloi_home.jpeg`,
+		screenshots:[
+			{path:`/images/work/loloi/loloi_home.jpeg`,
+				title:'Home Page',
+				description:''
+			},
+			{path:`/images/work/loloi/Loloi.jpeg`,
+				title:'',
+				description:''
+			}
+		]
+	},
+	{
+		id : 6,
+		title:'Mantissa Software Synth',
+		description:'An Actionscript software synth',
+		featuredImage:`/images/work/mantissa/mantissa-landing.png`,
+		screenshots:[
+			{path:`/images/work/mantissa/mantissa-landing.png`,
+				title:'Landing Page',
+				description:''
+			},
+			{path:`/images/work/mantissa/mantissasite1.jpg`,
+				title:'',
+				description:''
+			},
+			{path:`/images/work/mantissa/mantissasite2.jpg`,
+				title:'',
+				description:''
+			},
+			{path:`/images/work/mantissa/mantissasite3.jpg`,
+				title:'',
+				description:''
+			},
+			{path:`/images/work/mantissa/mantissasite4.jpg`,
+				title:'',
+				description:''
+			}
+		]
+	},
+	{
+		id : 7,
+		title:'Librety Harbor NJ',
+		description:'',
+		featuredImage:`/images/work/libertyHarbor/LibertyHarborNJ.com.jpg`,
+		screenshots:[
+			{path:`/images/work/libertyHarbor/LibertyHarborNJ.com.jpg`,
+				title:'libertyharbornj.com',
+				description:''
+			}
+		]
+	},
+	{
+		id : 8,
+		title:'SYnergy Industries',
+		description:'',
+		featuredImage:`/images/work/synergy/synergyEventProduction.png`,
+		screenshots:[
+			{path:`/images/work/synergy/synergyEventProduction.png`,
+				title:'Synergy Industries Event Production Landing Page',
+				description:''
+			},
+			{path:`/images/work/synergy/synergy1.jpg`,
+				title:'',
+				description:''
+			},
+			{path:`/images/work/synergy/synergy2.jpg`,
+				title:'',
+				description:''
+			},
+			{path:`/images/work/synergy/synergy3.jpg`,
+				title:'',
+				description:''
+			},
+			{path:`/images/work/synergy/synergy4.jpg`,
+				title:'',
+				description:''
+			}
+		]
+	},
+	{
+		id : 9,
+		title:'Orthodox Quote of the Day',
+		description:'',
+		featuredImage:`/images/work/OQOTD/oqotd.jpeg`,
+		screenshots:[
+			{path:`/images/work/OQOTD/oqotd.jpeg`,
+				title:'Orthodox Quote of the Day API Interface & Subscription signup page',
+				description:''
+			}
+		]
+	},
+	{
+		id : 10,
+		title:'Parables.tv',
+		description:'',
+		featuredImage:`/images/work/parables/parables1.png`,
+		screenshots:[
+			{path:`/images/work/parables/parables1.png`,
+				title:'',
+				description:''
+			},
+			{path:`/images/work/parables/parables2.png`,
+				title:'',
+				description:''
+			}
+		]
+	},
+	{
+		id : 11,
+		title:'sgwebmarketing.com',
+		description:'',
+		featuredImage:`/images/work/sgWebMarketing/sgweb.jpeg`,
+		screenshots:[
+			{path:`/images/work/sgWebMarketing/sgweb.jpeg`,
+				title:'',
+				description:''
+			},
+			{path:`/images/work/sgWebMarketing/services-sgweb.jpeg`,
+				title:'',
+				description:''
+			},
+			{path:`/images/work/sgWebMarketing/webdev-sgweb.jpeg`,
+				title:'',
+				description:''
+			}
+		]
+	},
+	{
+		id : 12,
+		title:'tokuhd.com',
+		description:'',
+		featuredImage:`/images/work/tokuhd/toku.png`,
+		screenshots:[
+			{path:`/images/work/tokuhd/toku.png`,
+				title:'',
+				description:''
+			}
+		]
+	},
+	{
+		id : 13,
+		title:'Trello Clone',
+		description:'',
+		featuredImage:`/images/work/trelloClone/s1.png`,
+		screenshots:[
+			{path:`/images/work/trelloClone/s1.png`,
+				title:'',
+				description:''
+			},
+			{path:`/images/work/trelloClone/s2.png`,
+				title:'',
+				description:''
+			},
+			{path:`/images/work/trelloClone/s3.png`,
+				title:'',
+				description:''
+			},
+			{path:`/images/work/trelloClone/s4.png`,
+				title:'',
+				description:''
+			}
+		]
+	},
+	{
+		id : 14,
+		title:'Wellio.co',
+		description:'',
+		featuredImage:`/images/work/Wellio/wellio.co.jpeg`,
+		screenshots:[
+			{path:`/images/work/Wellio/wellio.co.jpeg`,
+				title:'',
+				description:''
+			}
+		]
+	}
 ];
 
 let $ = Ember.$,

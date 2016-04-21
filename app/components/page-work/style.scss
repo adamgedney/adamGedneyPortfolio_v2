@@ -1,8 +1,10 @@
 .work{
   background: $bg-alt;
   position: relative;
+  padding-bottom: 126px;
 
   .page__inner{
+
 	//overflow-y: scroll;
 	//&:before{
 	//  content: '';
@@ -40,6 +42,7 @@
 	background-size: cover;
 	@include duration();
 	z-index: 1;
+	border: 39px solid black;
 
 	&:hover{
 	  transform: scale(1.02,1.02);
@@ -85,10 +88,10 @@
 	height: 100%;
 	display: inline-block;
 	text-align: right;
-	line-height: 18;
+	line-height: 24;
 	text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
 	padding-right: 36px;
-	font-size: 24px;
+	font-size: 18px;
 	position: relative;
 	color: #F6FEFF;
 	z-index: 0;
