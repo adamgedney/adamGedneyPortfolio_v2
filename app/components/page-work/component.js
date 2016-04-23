@@ -369,6 +369,7 @@ let $ = Ember.$,
 		rendered(that){
 			$this = that;
 			self  = this;
+			let store = $this.get('data');
 
 			// Set current route
 			self.route = getOwner($this).lookup('controller:application').currentPath;
@@ -376,6 +377,13 @@ let $ = Ember.$,
 			// Set Properties/helpers
 			$this.setProperties(self.properties);
 			$this.set('showProjectDetail',false);
+
+
+			//model retrieval
+			var post = store.findAll('project')
+				.then(res=>{
+					console.log(res.objectAt(9).get('title'));
+				});
 
 			//self.initScrollMagic();
 

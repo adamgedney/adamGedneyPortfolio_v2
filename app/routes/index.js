@@ -369,51 +369,40 @@ const projects = [
 export default Ember.Route.extend({
 	model: function () {
 		let store = this.store,
-			shots = [],
 			projs = [];
 
 		// Run through each project
 		_.each(projects, proj=>{
 
-
-			// Build the screenshots models
-			_.each(proj.screenshots, shot=>{
-				shots.push(store.createRecord('screenshot',shot));
-			});
-
-			// Reassign screenshots as a colleciton of models
-			proj.screenshots = shots;
-
 			// Create & save the new model record
-			projs.push(store.createRecord('project',proj));
-			//project.save();
-
-			//store.pushPayload(proj);
+			let project = store.createRecord('project',proj);
+			project.save();
 		});
 
-		let projects = store.createRecord('projects',projs);
-		projects.save()
-		.then(res=>{
-			console.log(projects,res);
-		});
 
 
 		//store.query('project').then((result) => {
-		//	let meta = result.get('project');
-		//	console.log('RES',store.query('project'));
+		//	let meta = result.findRecord('project', 1);
+		//
 		//});
 
 
+		//store.query('projects', { filter: { uuid: 1 } }).then(function(res) {
+		//	// Do something with `peters`
+		//	console.log('RES',res);
+		//});
 
-		return Ember.RSVP.hash({});
+		//var post = store.findAll('project')
+		//	.then(res=>{
+		//		console.log(res.objectAt(9).get('title'));
+		//	});
+
+
+
+		//console.log(App.Projects.find('1'));
+
+		return store;
+		//return Ember.RSVP.hash({});
 	},
-	actions : {
-
-		/**
-		 * Populate the Project models
-		 */
-		populateProjects : (()=>{
-
-		})()
-	}
+	actions : {}
 });
