@@ -55,13 +55,13 @@ let $ = Ember.$,
 		 * http://projects.lukehaas.me/scrollify/#home
 		 */
 		initScrollify(){
-			//Ember.$.scrollify({
-			//	section : ".page",
-			//	offset : 200,
-			//	setHeights: false
-			//	//standardScrollElements :".work"
-			//	//sectionName : "section-name"
-			//});
+			Ember.$.scrollify({
+				section : ".page",
+				offset : -66,
+				setHeights: false
+				//standardScrollElements :".work"
+				//sectionName : "section-name"
+			});
 		},
 
 		/**
