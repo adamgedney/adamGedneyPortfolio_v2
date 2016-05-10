@@ -18,6 +18,17 @@
 }
 
 
+body.noscroll{
+  position:fixed;
+  overflow:hidden;
+}
+
+.hover{
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+
 // Calculate em letter-spacing from print spec tracking values
 @mixin tracking($amt: 75){
 	$tracking : $amt / 1000;

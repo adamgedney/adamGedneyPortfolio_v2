@@ -78,7 +78,7 @@ const projects = [
 	{
 		id : 3,
 		title:'Graphic Design, Digital Art, & Logos',
-		description:'A collection of some of the graphic & logo design work I\'ve done or worked on',
+		description:'A collection of some of the graphic & logo design stuff I\'ve worked on',
 		featuredImage:`/images/work/graphic/pbzAd.png`,
 		screenshots:[
 			{path:`/images/work/graphic/pbzAd.png`,
@@ -492,6 +492,15 @@ let $ = Ember.$,
 		 * @param $this
 		 */
 		toggleDetail($this){
+			const $body = $('body');
+
+			// PRwevent body scrolling under overlay
+			if($body.hasClass('noscroll')){
+				$body.removeClass('noscroll');
+			}else{
+				$body.addClass('noscroll');
+			}
+
 			$this.set('showProjectDetail',!$this.get('showProjectDetail'));
 		},
 

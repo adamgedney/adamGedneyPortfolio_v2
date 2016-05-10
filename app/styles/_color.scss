@@ -52,8 +52,8 @@ $link-active: darken($link,30%);
 //===========================//
 $text: $black;
 $text-primary: lighten($text,10%);
-$text_secondary: lighten($text,20%);
-$text-tertiary: lighten($text,30%);
+$text_secondary: lighten($text,40%);
+$text-tertiary: lighten($text,60%);
 
 $text-alt : $white;
 $text-primary-alt: darken($text-alt,5%);

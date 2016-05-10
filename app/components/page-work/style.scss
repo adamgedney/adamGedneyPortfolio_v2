@@ -4,13 +4,12 @@
   padding-bottom: 126px;
 
   .page__inner{
-
-	//overflow-y: scroll;
-	//&:before{
-	//  content: '';
-	//  @include fadeColorBottomUp($bg-secondary);
-	//  z-index: 1;
-	//}
+	>img{//under construction
+	  text-align: center;
+	  width: 528px;
+	  display: block;
+	  margin: -24px auto 24px;
+	}
   }
 }
 
@@ -36,13 +35,12 @@
 
   &__item{
 	height: 252px;
-	width: 351px;
-	//max-height: 681px;
+	@include flex-basis(21%);
 	background: no-repeat center center;
 	background-size: cover;
 	@include duration();
 	z-index: 1;
-	border: 39px solid black;
+	border: 9px solid black;
 
 	&:hover{
 	  transform: scale(1.02,1.02);
@@ -96,6 +94,7 @@
 	color: #F6FEFF;
 	z-index: 0;
 	box-sizing: border-box;
+	@extend .truncate;
 
 	&:before{
 	  content: '';
@@ -129,16 +128,16 @@
   height: 100%;
   position: fixed;
   top: 0;
-  z-index: 3;
-  background: rgba(black,1);
+  z-index: 4;
+  background: $bg-secondary;
   @include duration(2s);
 
 
   &:before{
 	content: '';
 	height: 100%;
-	width: 2px;
-	//background: rgba($black,0.1);
+	width: 1px;
+	background: rgba($black,0.03);
 	position: absolute;
 	left: 50%;
 	top: 0;
@@ -168,7 +167,7 @@
 	  content: $fa-var-times;
 	  font-family: FontAwesome;
 	  font-size: 21px;
-	  color: $text-primary-alt;
+	  color: $text-primary;
 	  line-height: 57px;
 	  text-align: center;
 	  width: 57px;
@@ -182,9 +181,10 @@
 
   &__details{
 	padding-top: 8%;
+	//background: $bg-alt;
 
 	>h1,>p{
-	  color: $text-primary-alt;
+	  color: $text-primary;
 	  text-align: center;
 	  padding: 9px;
 	  border-radius: 3px;
@@ -198,29 +198,40 @@
 	  font-size: 57px;
 	  font-weight: 200;
 	  padding-bottom: 24px;
-	  text-shadow: 1px 1px 1px black;
+	  //text-shadow: 1px 1px 1px black;
 	}
 
 	>p{
 	  font-size: 21px;
 	  line-height: 1.6;
+	  font-weight: 300;
+	  color: $text-tertiary;
 	}
 
 	.screenshot{
 		&__wrapper{
 		  @extend .cf;
 		  margin-top: 99px;
+		  padding: 0 72px;
 		}
 
 	  &__group{
 		@extend .cf;
 		margin-bottom: 96px;
-		//border-bottom: 1px solid rgba($red,1);
-		padding: 72px 0 267px;
 		position: relative;
-		background-size: cover;
-		background-position: 100% 100%;
+		background-size: contain;
+		background-position: top center;
 		background-repeat: no-repeat;
+		float: left;
+		clear: both;
+		width: 60%;
+		min-height: 400px;
+		transform : rotate(-3deg);
+
+		&:nth-of-type(even){
+		  float: right;
+		  transform : rotate(3deg);
+		}
 
 		// Bg imagedark overlay
 		&:before{
@@ -243,7 +254,7 @@
 		}
 
 		h2,p{
-		  color: $text-primary-alt;
+		  color: $text-primary;
 		  padding: 9px;
 		  border-radius: 3px;
 		  box-sizing: border-box;
@@ -255,20 +266,15 @@
 		}
 
 		h2{
-		  float: left;
-		  font-size: 69px;
-		  margin-bottom: 57px;
+		  font-size: 21px;
 		  font-weight: 100;
-		  text-shadow: 1px 1px 1px black;
-
+		  position: absolute;
+		  width: 50%;
+		  top: -63px;
+		  text-align: center;
+		  left: 25%;
+		  margin: 0;
 		}
-
-		//img{
-		//  clear: left;
-		//  display: block;
-		//  margin-bottom: 144px;
-		//  border-radius: 3px;
-		//}
 
 		p{
 		  float: right;
@@ -276,7 +282,6 @@
 		  text-align: justify;
 		  font-size: 21px;
 		  line-height: 1.6;
-		  //background: #fff;
 		}
 
 		ul{
@@ -312,7 +317,6 @@
 		&:nth-child(even){
 		  h2{
 			float: right;
-			text-align: right;
 		  }
 
 		  //img{

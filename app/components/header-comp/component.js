@@ -40,7 +40,7 @@ let $ = Ember.$,
 		 */
 		handlers(){
 
-			self.initScrollify();
+			//self.initScrollify();
 
 			// Menu item click
 			$('.header__menuItem').click(function(e){
