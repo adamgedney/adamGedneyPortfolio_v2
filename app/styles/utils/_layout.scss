@@ -18,5 +18,9 @@ body{
     min-height: 600px;
     min-height: 94vh;
     position: relative;
+
+    @include break(sm){
+      padding: 18px;
+    }
   }
 }

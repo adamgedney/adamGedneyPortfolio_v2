@@ -37,6 +37,11 @@
       line-height: 1;
       //-webkit-animation: backgroundZoom 120s infinite ease-in-out;
 
+      @include break(sm){
+        font-size: 57px;
+        margin-top: 25%;
+      }
+
       span.colorAnimation{
         color: $green;
         text-shadow: 0 0 8px $green;
@@ -53,6 +58,10 @@
       opacity: 0.3;
       font-weight: 200;
       //-webkit-animation: backgroundZoom 240s infinite ease-in-out;
+
+      @include break(sm){
+        font-size: 18px;
+      }
     }
   }
 }
