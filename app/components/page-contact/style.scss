@@ -29,6 +29,10 @@
 	  position: relative;
 	  //background: $bg-secondary;
 
+	  @include break(sm){
+		font-size: 24px;
+	  }
+
 	  &:before,
 	  &:after{
 		content: '';
@@ -52,10 +56,15 @@
   &__form{
 	@include col(6);
 	@include col_ctr(6);
-	background: #FDFDFD;
+	background: rgba(#FDFDFD,0.9);
 	//box-shadow: 2px 2px 2px rgba(black,0.7);
 	padding: 36px;
 	border-radius: 6px;
+
+	@include break(sm){
+	  @include col(12);
+	  @include col_ctr(12);
+	}
 
 	label,
 	input,

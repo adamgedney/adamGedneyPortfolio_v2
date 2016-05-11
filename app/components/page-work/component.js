@@ -10,7 +10,7 @@ const projects = [
 	{
 		id : 1,
 		title:'GenSizer SPA',
-		description:'A generator size estimation tools for Assurance Power',
+		description:'A generator size estimation tool for Assurance Power. Built with vanilla JS, JQuery, and CSS3 for animations. Project created while an employee at Green Group Studio in Lake Worth, FL.',
 		featuredImage:`/images/work/alliedGen/landing.jpeg`,
 		screenshots:[
 			{path:`/images/work/alliedGen/landing.jpeg`,
@@ -34,12 +34,30 @@ const projects = [
 	{
 		id : 2,
 		title:'Company Portal',
-		description:'A company portal providing internal tools and interfaces for the company AWS microservice API.',
+		description:'A company portal providing internal tools and interfaces for the company AWS microservice API. Built in MeteorJS using ES6 and SASS.',
 		featuredImage:`/images/work/companyPortal/portal_dashboard.png`,
 		screenshots:[
 			{path:`/images/work/companyPortal/portal_dashboard.png`,
 				title:'Portal Dashboard',
-				description:''
+				description:'The dashboard is where the user lands after login and it is a visual representation of the modules accessible to the user by their role.',
+				features :[
+					{
+						description:'ES6',
+						subDescription : ''
+					},
+					{
+						description:'JQuery',
+						subDescription : ''
+					},
+					{
+						description:'SASS/CSS3',
+						subDescription : ''
+					},
+					{
+						description:'Default Background',
+						subDescription : 'Can be a hex color or an image'
+					}
+				]
 			},
 			{path:`/images/work/companyPortal/1_catalog_module_list_view.png`,
 				title:'Catalog Manager List View',

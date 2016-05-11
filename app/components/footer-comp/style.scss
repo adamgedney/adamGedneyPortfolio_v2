@@ -7,8 +7,13 @@ footer{
 	margin: 0 auto;
 
 	ul{
-	  width: 30%;
-	  margin: 0 35%;
+	  @include col(6);
+	  @include col_ctr(6);
+
+	  @include break(sm){
+		@include col(12);
+		@include col_ctr(12);
+	  }
 
 	  li{
 		display: inline-block;
@@ -17,10 +22,22 @@ footer{
 		color: $text-primary-alt;
 		text-decoration: none;
 
+		@include break(sm){
+		  display: none;
+		}
+
+		&:last-of-type{
+		  @include break(sm){
+			display: block;
+			text-align: center;
+		  }
+		}
+
 		a{
 		  line-height: 90px;
 		  color: $text-primary-alt;
 		  text-decoration: none;
+		  text-align: center;
 		}
 	  }
 	}

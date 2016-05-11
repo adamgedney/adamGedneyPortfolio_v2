@@ -6,7 +6,7 @@
   &:before{
     content: '';
 	background: url('/images/sunset.jpg') no-repeat center center black;
-	//background-attachment: fixed;
+	background-attachment: fixed;
 	background-size: cover;
 	position: absolute;
 	top: 0;
@@ -40,13 +40,14 @@
 	  @include col(6);
 	  @include col_ctr(6);
 	  opacity: 0.6;
+	  color: #fff;
+	  font-size: 18px;
 
 	  @include break(sm){
 		@include col(11);
 		@include col_ctr(11);
 		line-height: 1.4;
 		text-align: left;
-		font-size: 18px;
 	  }
 	}
   }

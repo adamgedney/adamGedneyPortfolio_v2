@@ -29,15 +29,25 @@
 
                     <div class="screenshot__wrapper animated fadeInUp">
                         {{#each currentProject.screenshots as |shot|}}
-                            <div class="screenshot__group" style="background-image: url({{shot.path}});">
+                            <div class="screenshot__group">
                                 <div class="screenshot__group__inner">
-                                    <h2 class="animated fadeInLeftBig">{{shot.title}}</h2>
-                                    <ul>
-                                    {{#each shot.features as |feature|}}
-                                        <li title="{{feature.subDescription}}">{{feature.description}}</li>
-                                    {{/each}}
-                                    </ul>
-                                    <p class="animated fadeInRightBig">{{{shot.description}}}</p>
+                                    {{light-box href=shot.path data-lightbox="screenshots" data-title=shot.title data-class="screenshot__groupImage"}}
+
+                                    <div class="screenshot__groupDetails">
+                                        <h2 class="animated fadeInLeftBig">{{shot.title}}</h2>
+                                        <p class="animated fadeInRightBig">{{{shot.description}}}</p>
+
+                                        <h3>Highlights & Technology</h3>
+                                        <ul>
+                                            {{#each shot.features as |feature|}}
+                                                <li title="{{feature.subDescription}}">
+                                                    <span>{{feature.description}}</span>
+                                                    <span>{{feature.subDescription}}</span>
+                                                </li>
+                                            {{/each}}
+                                        </ul>
+
+                                    </div>
                                 </div>
                             </div>
                         {{/each}}
