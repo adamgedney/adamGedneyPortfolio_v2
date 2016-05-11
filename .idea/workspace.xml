@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c99ab72b-2fb7-4986-9ee0-30b295e16d13" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/page-who/style.scss" afterPath="$PROJECT_DIR$/app/components/page-who/style.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/page-tools/style.scss" afterPath="$PROJECT_DIR$/app/components/page-tools/style.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/pods.scss" afterPath="$PROJECT_DIR$/app/styles/pods.scss" />
     </list>
     <ignored path="testember.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,18 +28,18 @@
       <file leaf-file-name="pods.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/styles/pods.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.25">
-              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state vertical-scroll-proportion="-6.875">
+              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="style.scss" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/components/page-who/style.scss">
+        <entry file="file://$PROJECT_DIR$/app/components/page-tools/style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.68085104">
-              <caret line="47" column="25" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
+            <state vertical-scroll-proportion="0.8336557">
+              <caret line="42" column="25" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -66,7 +67,6 @@
         <option value="$PROJECT_DIR$/app/styles/utils/_typography.scss" />
         <option value="$PROJECT_DIR$/app/components/page-who/bio.js" />
         <option value="$PROJECT_DIR$/app/components/page-who/component.js" />
-        <option value="$PROJECT_DIR$/app/components/page-tools/style.scss" />
         <option value="$PROJECT_DIR$/app/components/header-comp/template.hbs" />
         <option value="$PROJECT_DIR$/app/components/header-comp/template.hbs" />
         <option value="$PROJECT_DIR$/app/components/project-post/template.hbs" />
@@ -107,9 +107,10 @@
         <option value="$PROJECT_DIR$/app/components/footer-comp/style.scss" />
         <option value="$PROJECT_DIR$/app/styles/utils/_layout.scss" />
         <option value="$PROJECT_DIR$/app/components/page-fold/style.scss" />
-        <option value="$PROJECT_DIR$/app/styles/pods.scss" />
-        <option value="$PROJECT_DIR$/app/styles/pods.scss" />
         <option value="$PROJECT_DIR$/app/components/page-who/style.scss" />
+        <option value="$PROJECT_DIR$/app/styles/pods.scss" />
+        <option value="$PROJECT_DIR$/app/components/page-tools/style.scss" />
+        <option value="$PROJECT_DIR$/app/styles/pods.scss" />
       </list>
     </option>
   </component>
@@ -275,7 +276,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="page-who" />
+              <option name="myItemId" value="page-tools" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -552,13 +553,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/page-tools/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4352031">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="33" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/components/header-comp/template.hbs">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.029013539">
@@ -788,18 +782,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/pods.scss">
+    <entry file="file://$PROJECT_DIR$/app/components/page-who/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.25">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.82591873">
+          <caret line="52" column="1" selection-start-line="52" selection-start-column="1" selection-end-line="52" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/page-who/style.scss">
+    <entry file="file://$PROJECT_DIR$/app/styles/pods.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.68085104">
-          <caret line="47" column="25" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
+        <state vertical-scroll-proportion="-6.875">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/page-tools/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8336557">
+          <caret line="42" column="25" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
           <folding />
         </state>
       </provider>

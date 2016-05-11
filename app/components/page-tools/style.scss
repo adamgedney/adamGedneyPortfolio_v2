@@ -33,10 +33,16 @@
       z-index: 1;
     }
 
-    h2{
-      text-align: right;
-      padding-right: 10%;
-    }
+    h2 {
+	  text-align    : right;
+	  padding-right : 10%;
+
+	  @include break(sm) {
+		text-align : center;
+		font-size: 33px;
+		line-height: 1.2;
+	  }
+	}
   }
 
   &__container{
