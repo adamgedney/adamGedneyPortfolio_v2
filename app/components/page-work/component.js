@@ -34,7 +34,7 @@ const projects = [
 	{
 		id : 2,
 		title:'Company Portal',
-		description:'A company portal providing internal tools and interfaces for the company AWS microservice API. Built in MeteorJS using ES6 and SASS.',
+		description:'A company portal providing internal tools and interfaces for the company AWS microservice API. Built in MeteorJS using ES6 and SASS. I was responsible for designing and developing the application.',
 		featuredImage:`/images/work/companyPortal/portal_dashboard.png`,
 		screenshots:[
 			{path:`/images/work/companyPortal/portal_dashboard.png`,
@@ -61,35 +61,163 @@ const projects = [
 			},
 			{path:`/images/work/companyPortal/1_catalog_module_list_view.png`,
 				title:'Catalog Manager List View',
-				description:''
+				description:'The main list view for catalog items. Used as the starting point for the metadata editing workflow.',
+				features :[
+					{
+						description:'ES6',
+						subDescription : ''
+					},
+					{
+						description:'JQuery',
+						subDescription : ''
+					},
+					{
+						description:'SASS/CSS3',
+						subDescription : ''
+					},
+					{
+						description:'DataTable Component',
+						subDescription : 'Handles infinite scroll, selected items, and external requests.'
+					},
+					{
+						description:'Admin tools',
+						subDescription : 'Catalog managers have access to user role tools via this page.'
+					}
+				]
 			},
 			{path:`/images/work/companyPortal/2_catalog_module_user_role_management_modal.png`,
 				title:'User Role Management',
-				description:''
+				description:'A full role management system operating off a Mongo Database',
+				features :[
+					{
+						description:'ES6',
+						subDescription : ''
+					},
+					{
+						description:'JQuery',
+						subDescription : ''
+					},
+					{
+						description:'SASS/CSS3',
+						subDescription : ''
+					}
+				]
 			},
 			{path:`/images/work/companyPortal/3_catalog_module_create_modal.png`,
 				title:'Create Modal',
-				description:''
+				description:'From this modal users can enter either the movie or series create interfaces.',
+				features :[
+					{
+						description:'ES6',
+						subDescription : ''
+					},
+					{
+						description:'JQuery',
+						subDescription : ''
+					},
+					{
+						description:'SASS/CSS3',
+						subDescription : ''
+					}
+				]
 			},
 			{path:`/images/work/companyPortal/5_catalog_module_create_series_modal.png`,
 				title:'Series Creation',
-				description:''
+				description:'When creating a series, the user titles the series, determines the number of seasons and episodes per season. This is then sent to the server for entity creation.',
+				features :[
+					{
+						description:'ES6',
+						subDescription : ''
+					},
+					{
+						description:'JQuery',
+						subDescription : ''
+					},
+					{
+						description:'SASS/CSS3',
+						subDescription : ''
+					},
+					{
+						description:'Incrementer Component',
+						subDescription : 'Made from Blaze dynamic templates'
+					}
+				]
 			},
 			{path:`/images/work/companyPortal/6_catalog_module_series_page_top.png`,
 				title:'Series View Top',
-				description:''
+				description:'Here the user edits metadata for series entities',
+				features :[
+					{
+						description:'ES6',
+						subDescription : ''
+					},
+					{
+						description:'JQuery',
+						subDescription : ''
+					},
+					{
+						description:'SASS/CSS3',
+						subDescription : ''
+					},
+					{
+						description:'Select Components',
+						subDescription : 'All multiselects are components'
+					}
+				]
 			},
 			{path:`/images/work/companyPortal/7_catalog_module_series_page_bottom.png`,
 				title:'Series View Bottom',
-				description:''
+				description:'Here the user enters season level metadata and can drill-down into episodes',
+				features :[
+					{
+						description:'ES6',
+						subDescription : ''
+					},
+					{
+						description:'JQuery',
+						subDescription : ''
+					},
+					{
+						description:'SASS/CSS3',
+						subDescription : ''
+					}
+				]
 			},
 			{path:`/images/work/companyPortal/8_catalog_module_title_page_top.png`,
-				title:'movie View',
-				description:''
+				title:'Movie View',
+				description:'Movie entity metadata forms',
+				features :[
+					{
+						description:'ES6',
+						subDescription : ''
+					},
+					{
+						description:'JQuery',
+						subDescription : ''
+					},
+					{
+						description:'SASS/CSS3',
+						subDescription : ''
+					}
+				]
 			},
 			{path:`/images/work/companyPortal/9_catalog_module_title_page_bottom.png`,
 				title:'Versions View',
-				description:''
+				description:'Movie and episode version metadata and segment interfaces',
+				features :[
+					{
+						description:'ES6',
+						subDescription : ''
+					},
+					{
+						description:'JQuery',
+						subDescription : ''
+					},
+					{
+						description:'SASS/CSS3',
+						subDescription : ''
+					}
+				]
 			}
 		]
 	},

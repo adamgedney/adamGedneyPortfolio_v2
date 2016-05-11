@@ -31,9 +31,9 @@
                         {{#each currentProject.screenshots as |shot|}}
                             <div class="screenshot__group">
                                 <div class="screenshot__group__inner">
-                                    {{light-box href=shot.path data-lightbox="screenshots" data-title=shot.title data-class="screenshot__groupImage"}}
+                                    {{light-box href=shot.path data-lightbox="screenshots" data-title=shot.title data-class="screenshot__groupImage animated fadeInLeftBig"}}
 
-                                    <div class="screenshot__groupDetails">
+                                    <div class="screenshot__groupDetails animated fadeInRightBig">
                                         <h2 class="animated fadeInLeftBig">{{shot.title}}</h2>
                                         <p class="animated fadeInRightBig">{{{shot.description}}}</p>
 

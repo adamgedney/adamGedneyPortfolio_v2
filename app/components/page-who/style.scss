@@ -28,6 +28,30 @@
 	}
   }
 
+  &__linkContainer{
+	ul{
+	  @include col(3);
+	  @include col_ctr(3);
+	  margin-top: 57px;
+
+	  li{
+		@include col(5);
+		text-align: center;
+		display: inline-block;
+
+		&:hover{
+		  @extend .hover;
+		}
+
+		a{
+		  text-decoration: none;
+		  color: #fff;
+		  font-weight: 100;
+		}
+	  }
+	}
+  }
+
 
   .page__inner{
     h2{
