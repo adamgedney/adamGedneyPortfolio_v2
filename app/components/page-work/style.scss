@@ -4,6 +4,15 @@
   padding-bottom: 126px;
 
   .page__inner{
+
+	h2{
+	  @include break(sm) {
+		text-align : center;
+		font-size: 33px;
+		line-height: 1.2;
+	  }
+	}
+
 	>img{//under construction
 	  text-align: center;
 	  width: 528px;
@@ -41,6 +50,10 @@
 	@include duration();
 	z-index: 1;
 	border: 9px solid black;
+
+	@include break(sm) {
+	  width: 50%;
+	}
 
 	&:hover{
 	  transform: scale(1.02,1.02);
@@ -95,6 +108,12 @@
 	z-index: 0;
 	box-sizing: border-box;
 	@extend .truncate;
+
+	@include break(sm) {
+	  font-size: 16px;
+	  line-height: 27;
+	  padding-left: 9px;
+	}
 
 	&:before{
 	  content: '';
