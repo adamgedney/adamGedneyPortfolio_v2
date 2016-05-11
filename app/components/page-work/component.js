@@ -15,19 +15,59 @@ const projects = [
 		screenshots:[
 			{path:`/images/work/alliedGen/landing.jpeg`,
 				title:'Site landing',
-				description:''
+				description:'',
+				features :[
+					{
+						description:'JQuery',
+						subDescription : ''
+					},
+					{
+						description:'CSS3',
+						subDescription : ''
+					}
+				]
 			},
 			{path:`/images/work/alliedGen/percent.jpeg`,
 				title:'Percentage interface',
-				description:''
+				description:'',
+				features :[
+					{
+						description:'JQuery',
+						subDescription : ''
+					},
+					{
+						description:'CSS3',
+						subDescription : ''
+					}
+				]
 			},
 			{path:`/images/work/alliedGen/tons.jpeg`,
 				title:'CSS Scrollwheel selector',
-				description:''
+				description:'',
+				features :[
+					{
+						description:'JQuery',
+						subDescription : ''
+					},
+					{
+						description:'CSS3',
+						subDescription : ''
+					}
+				]
 			},
 			{path:`/images/work/alliedGen/type.jpeg`,
 				title:'Type selector',
-				description:''
+				description:'',
+				features :[
+					{
+						description:'JQuery',
+						subDescription : ''
+					},
+					{
+						description:'CSS3',
+						subDescription : ''
+					}
+				]
 			},
 		]
 	},
