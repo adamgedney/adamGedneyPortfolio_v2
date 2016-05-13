@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c99ab72b-2fb7-4986-9ee0-30b295e16d13" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/page-work/component.js" afterPath="$PROJECT_DIR$/app/components/page-work/component.js" />
     </list>
     <ignored path="testember.iws" />
@@ -36,13 +37,19 @@
       <file leaf-file-name="component.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/components/page-work/component.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.9131238">
-              <caret line="69" column="17" selection-start-line="69" selection-start-column="17" selection-end-line="69" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.3068392">
+              <caret line="553" column="31" selection-start-line="553" selection-start-column="31" selection-end-line="553" selection-end-column="31" />
               <folding>
-                <element signature="e#1587#6522#0" expanded="false" />
-                <element signature="e#6525#8876#0" expanded="false" />
-                <element signature="e#8879#9520#0" expanded="false" />
-                <element signature="e#9523#9851#0" expanded="false" />
+                <element signature="e#226#1896#0" expanded="false" />
+                <element signature="e#1899#6834#0" expanded="false" />
+                <element signature="e#15197#15468#0" expanded="false" />
+                <element signature="e#15471#16106#0" expanded="false" />
+                <element signature="e#16109#16393#0" expanded="false" />
+                <element signature="e#16396#16700#0" expanded="false" />
+                <element signature="e#16703#17129#0" expanded="false" />
+                <element signature="e#17132#17334#0" expanded="false" />
+                <element signature="e#17337#17796#0" expanded="false" />
+                <element signature="e#17799#18012#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -477,10 +484,11 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/app/components/page-work/component.js</url>
-          <line>475</line>
+          <line>263</line>
+          <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="1" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -851,13 +859,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/components/page-work/component.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.9131238">
-          <caret line="69" column="17" selection-start-line="69" selection-start-column="17" selection-end-line="69" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.3068392">
+          <caret line="553" column="31" selection-start-line="553" selection-start-column="31" selection-end-line="553" selection-end-column="31" />
           <folding>
-            <element signature="e#1587#6522#0" expanded="false" />
-            <element signature="e#6525#8876#0" expanded="false" />
-            <element signature="e#8879#9520#0" expanded="false" />
-            <element signature="e#9523#9851#0" expanded="false" />
+            <element signature="e#226#1896#0" expanded="false" />
+            <element signature="e#1899#6834#0" expanded="false" />
+            <element signature="e#15197#15468#0" expanded="false" />
+            <element signature="e#15471#16106#0" expanded="false" />
+            <element signature="e#16109#16393#0" expanded="false" />
+            <element signature="e#16396#16700#0" expanded="false" />
+            <element signature="e#16703#17129#0" expanded="false" />
+            <element signature="e#17132#17334#0" expanded="false" />
+            <element signature="e#17337#17796#0" expanded="false" />
+            <element signature="e#17799#18012#0" expanded="false" />
           </folding>
         </state>
       </provider>

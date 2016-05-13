@@ -10,12 +10,12 @@ const projects = [
 	{
 		id : 1,
 		title:'GenSizer SPA',
-		description:'A generator size estimation tool for Assurance Power. Built with vanilla JS, JQuery, and CSS3 for animations. Project created while an employee at Green Group Studio in Lake Worth, FL.',
+		description:'A generator size estimation tool for Assurance Power. Built with vanilla JS, JQuery, and CSS3 for animations. Project created while employed at Green Group Studio in Lake Worth, FL.',
 		featuredImage:`/images/work/alliedGen/landing.jpeg`,
 		screenshots:[
 			{path:`/images/work/alliedGen/landing.jpeg`,
 				title:'Site landing',
-				description:'',
+				description:'A simple interface for forking the user down one of the two site goals.',
 				features :[
 					{
 						description:'JQuery',
@@ -29,7 +29,7 @@ const projects = [
 			},
 			{path:`/images/work/alliedGen/percent.jpeg`,
 				title:'Percentage interface',
-				description:'',
+				description:'A Javascript component for sliding to set a percentage value.',
 				features :[
 					{
 						description:'JQuery',
@@ -43,7 +43,7 @@ const projects = [
 			},
 			{path:`/images/work/alliedGen/tons.jpeg`,
 				title:'CSS Scrollwheel selector',
-				description:'',
+				description:'A mostly CSS3 scrollwheel interface. Javascript was used to capture the value based on scroll position.',
 				features :[
 					{
 						description:'JQuery',
@@ -57,7 +57,7 @@ const projects = [
 			},
 			{path:`/images/work/alliedGen/type.jpeg`,
 				title:'Type selector',
-				description:'',
+				description:'Default checkbox styles were overridden and animated to create these checkboxes.',
 				features :[
 					{
 						description:'JQuery',
@@ -268,72 +268,178 @@ const projects = [
 		featuredImage:`/images/work/graphic/pbzAd.png`,
 		screenshots:[
 			{path:`/images/work/graphic/pbzAd.png`,
-				title:'A Florida Magazine Advertisement',
-				description:''
+				title:'Magazine Advertisement',
+				description:'This ad ran in a Key West Magazine.',
+				features :[
+					{
+						description:'Photoshop',
+						subDescription : ''
+					},
+					{
+						description:'Illustrator',
+						subDescription : ''
+					}
+				]
 			},
 			{path:`/images/work/graphic/BizCard-Meditrina-BizCardMockup2300x1673.jpg`,
-				title:'Napa Valley Concierge Service Logo Design and Business Cards',
-				description:''
+				title:'Meditrina Concierge',
+				description:'Full branding for a Napa Valley Concierge Service. Logo Design and Business Cards',
+				features :[
+					{
+						description:'Illustrator',
+						subDescription : ''
+					}
+				]
 			},
 			{path:`/images/work/graphic/bottle-09ck.png`,
 				title:'Wine Label Edits and ATF Approval Adjustments',
-				description:''
+				description:'Wine label work while an employee of Jericho Canyon Vineyard in Napa Valley.',
+				features :[
+					{
+						description:'Illustrator',
+						subDescription : ''
+					}
+				]
 			},
 			{path:`/images/work/graphic/Consider.png`,
 				title:'Digital Art',
-				description:''
+				description:'Personal project exploring digital art.',
+				features :[
+					{
+						description:'Photoshop',
+						subDescription : ''
+					}
+				]
 			},
 			{path:`/images/work/graphic/considerSharpening.png`,
 				title:'Digital Art',
-				description:''
+				description:'Personal project exploring digital art.',
+				features :[
+					{
+						description:'Photoshop',
+						subDescription : ''
+					}
+				]
 			},
 			{path:`/images/work/graphic/Cop-ernicus.png`,
 				title:'Digital Art',
-				description:''
+				description:'Personal project exploring digital art.',
+				features :[
+					{
+						description:'Photoshop',
+						subDescription : ''
+					}
+				]
 			},
 			{path:`/images/work/graphic/gedney_adam_p1.jpg`,
-				title:'Adobe Illustrator Gradient Mesh Art',
-				description:''
-			},
-			{path:`/images/work/graphic/Gedney_Adam_Travel_Poster.png`,
-				title:'Travel Poster',
-				description:''
-			},
-			{path:`/images/work/graphic/Gedney_Adam_Travel_Poster3.png`,
-				title:'Travel Poster',
-				description:''
-			},
-			{path:`/images/work/graphic/GraphicDesign-OrbitsAd-Mockup800x600.jpg`,
-				title:'Adobe Illustrator Mock Advertisement for Orbitz',
-				description:''
-			},
-			{path:`/images/work/graphic/Logo-COW-Mockup800x600.jpg`,
-				title:'Napa Valley Winery Logo',
-				description:''
-			},
-			{path:`/images/work/graphic/Logo-StudioByKeliann-Mockup.png`,
-				title:'Hair Salon Logo',
-				description:''
+				title:'Digital Art',
+				description:'Personal project exploring digital art.',
+				features :[
+					{
+						description:'Illustrator',
+						subDescription : ' Gradient Mesh'
+					}
+				]
 			},
 			{path:`/images/work/graphic/mono.png`,
 				title:'Digital Art',
-				description:''
+				description:'Personal project exploring digital art.',
+				features :[
+					{
+						description:'Illustrator',
+						subDescription : ' Gradient Mesh'
+					}
+				]
+			},
+			{path:`/images/work/graphic/Gedney_Adam_Travel_Poster.png`,
+				title:'Travel Poster',
+				description:'A Full Sail University project',
+				features :[
+					{
+						description:'Illustrator',
+						subDescription : ' '
+					}
+				]
+			},
+			{path:`/images/work/graphic/Gedney_Adam_Travel_Poster3.png`,
+				title:'Travel Poster',
+				description:'A Full Sail University project',
+				features :[
+					{
+						description:'Illustrator',
+						subDescription : ' '
+					}
+				]
+			},
+			{path:`/images/work/graphic/GraphicDesign-OrbitsAd-Mockup800x600.jpg`,
+				title:'Mock Advertisement for Orbitz',
+				description:'A Full Sail University project',
+				features :[
+					{
+						description:'Illustrator',
+						subDescription : ' '
+					}
+				]
+			},
+			{path:`/images/work/graphic/Logo-COW-Mockup800x600.jpg`,
+				title:'Napa Valley Winery Logo',
+				description:'Logo for a Northern Napa Valley winery',
+				features :[
+					{
+						description:'Illustrator',
+						subDescription : ' '
+					}
+				]
+			},
+			{path:`/images/work/graphic/Logo-StudioByKeliann-Mockup.png`,
+				title:'Studio by Keliann Logo',
+				description:'',
+				features :[
+					{
+						description:'Illustrator',
+						subDescription : ' '
+					}
+				]
 			},
 			{path:`/images/work/graphic/Print-AubertOrder-Mockup1500x956.jpg`,
-				title:'Napa Valley Exclusive Winery Order Form',
-				description:''
+				title:'Order Form',
+				description:'Designed for an exclusive Napa Valley Winery ',
+				features :[
+					{
+						description:'InDesign',
+						subDescription : ' '
+					}
+				]
 			},
 			{path:`/images/work/graphic/Print-MayaMenu-Mockup1500x1017.jpg`,
-				title:'Napa Valley Bar Menu',
-				description:''
+				title:'Restaurant/Bar Menu',
+				description:'Designed for a Napa Valley Restaurant/Bar',
+				features :[
+					{
+						description:'InDesign',
+						subDescription : ' '
+					}
+				]
 			},
 			{path:`/images/work/graphic/Print-TerroirCalistogaPostCard-Mockup.png`,
 				title:'Wine Club Offer Postcard Advertisement',
-				description:''
+				description:'Designed for three exclusive Napa Valley wineries offering group tours.',
+				features :[
+					{
+						description:'Illustrator',
+						subDescription : ' '
+					}
+				]
 			},
 			{path:`/images/work/graphic/Print-ZosimaPostCard-Mockup1920x1280.jpg`,
 				title:'Post Card Mailer',
-				description:''
+				description:'Designed for an internet based Church supply company.',
+				features :[
+					{
+						description:'Photoshop',
+						subDescription : ' '
+					}
+				]
 			}
 		]
 	},
@@ -343,37 +449,97 @@ const projects = [
 		description:'A WordPress Website & Graphic Design',
 		featuredImage:`/images/work/jericho/label-ck09Bottle.png`,
 		screenshots:[
-			{path:`/images/work/jericho/label-ck09Bottle.png`,
-				title:'Wine Label Work',
-				description:''
-			},
 			{path:`/images/work/jericho/JerichoCanyonVineyardWebsite.png`,
 				title:'100+ Page Custom WordPress Site',
-				description:''
+				description:'Built in 2011, a complete revamp of teh Winery\'s old website, migrating to WordPress.',
+				features :[
+					{
+						description:'PHP',
+						subDescription : ' '
+					},
+					{
+						description:'Javascript',
+						subDescription : ' '
+					},
+					{
+						description:'CSS',
+						subDescription : ' '
+					}
+				]
+			},
+			{path:`/images/work/jericho/label-ck09Bottle.png`,
+				title:'Wine Label Work',
+				description:'Design work while employed at Jericho Canyon Vineyard in Napa Valley CA',
+				features :[
+					{
+						description:'Illustrator',
+						subDescription : ' '
+					}
+				]
 			},
 			{path:`/images/work/jericho/label-ch10toppic.png`,
 				title:'Wine Label Work',
-				description:''
+				description:'Design work while employed at Jericho Canyon Vineyard in Napa Valley CA',
+				features :[
+					{
+						description:'Illustrator',
+						subDescription : ' '
+					}
+				]
 			},
 			{path:`/images/work/jericho/label-ootoppic.png`,
-				title:'Wine Label Work',
-				description:''
+				title:'Olive Oil Label Work',
+				description:'Design work while employed at Jericho Canyon Vineyard in Napa Valley CA',
+				features :[
+					{
+						description:'Illustrator',
+						subDescription : ' '
+					}
+				]
 			}
 		]
 	},
 	{
 		id : 5,
 		title:'Loloi Rugs',
-		description:'Custom site built on .Net',
+		description:'Custom site built on .Net. I was responsible for the Front End. Built while working for RepZio LLC in Juno Beach, FL.',
 		featuredImage:`/images/work/loloi/loloi_home.jpeg`,
 		screenshots:[
 			{path:`/images/work/loloi/loloi_home.jpeg`,
 				title:'Home Page',
-				description:''
+				description:'Mega Menu and Slider. Featured section.',
+				features :[
+					{
+						description:'.NET',
+						subDescription : ' '
+					},
+					{
+						description:'Javascript',
+						subDescription : ' '
+					},
+					{
+						description:'CSS',
+						subDescription : ' '
+					}
+				]
 			},
 			{path:`/images/work/loloi/Loloi.jpeg`,
-				title:'',
-				description:''
+				title:'Rug Detail',
+				description:'Details, description, and related rugs.',
+				features :[
+					{
+						description:'.NET',
+						subDescription : ' '
+					},
+					{
+						description:'Javascript',
+						subDescription : ' '
+					},
+					{
+						description:'CSS',
+						subDescription : ' '
+					}
+				]
 			}
 		]
 	},
@@ -385,23 +551,53 @@ const projects = [
 		screenshots:[
 			{path:`/images/work/mantissa/mantissa-landing.png`,
 				title:'Landing Page',
-				description:''
-			},
-			{path:`/images/work/mantissa/mantissasite1.jpg`,
-				title:'',
-				description:''
-			},
-			{path:`/images/work/mantissa/mantissasite2.jpg`,
-				title:'',
-				description:''
+				description:'Simple landing page to facilitate using the synth or downloading the Adobe AIR app version.',
+				features :[
+					{
+						description:'HTML/CSS',
+						subDescription : ' '
+					},
+					{
+						description:'Flash',
+						subDescription : ' '
+					}
+				]
 			},
 			{path:`/images/work/mantissa/mantissasite3.jpg`,
-				title:'',
-				description:''
+				title:'Synth',
+				description:'',
+				features :[
+					{
+						description:'Illustrator',
+						subDescription : ' '
+					},
+					{
+						description:'Flash',
+						subDescription : ' '
+					},
+					{
+						description:'ActionScript',
+						subDescription : ' '
+					}
+				]
 			},
 			{path:`/images/work/mantissa/mantissasite4.jpg`,
-				title:'',
-				description:''
+				title:'Synth Key Detail',
+				description:'',
+				features :[
+					{
+						description:'Illustrator',
+						subDescription : ' '
+					},
+					{
+						description:'Flash',
+						subDescription : ' '
+					},
+					{
+						description:'ActionScript',
+						subDescription : ' '
+					}
+				]
 			}
 		]
 	},
