@@ -202,10 +202,7 @@
 		@extend .cf;
 		position: relative;
 		min-height: 400px;
-
-		&:nth-of-type(even){
-		  background:darken($bg-secondary,5%);
-		}
+		padding: 36px 0;
 
 		&__inner{
 		  position: relative;
@@ -277,7 +274,7 @@
 			  padding-left: 18px;
 
 			  &:before{
-				content: $fa-var-code;
+				content: $fa-var-check;
 				font-family: FontAwesome;
 				font-size: 12px;
 				left: 0;

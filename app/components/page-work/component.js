@@ -899,11 +899,30 @@ const projects = [
 		id : 13,
 		title:'Trello Clone',
 		description:'A clone of Trello built for internal use. The data comes from our Bitrix project management software. We needed a mor intuitive interface for manageing tasks.',
-		featuredImage:`/images/work/trelloClone/s1.png`,
+		featuredImage:`/images/work/trelloClone/s4.png`,
 		screenshots:[
+			{
+				path       : `/images/work/trelloClone/s4.png`,
+				title      : 'Dashboard w/ custom background',
+				description: 'Users interact with their tasks with this drag-and-drop interface. Time tracking is implemented when users move tasks to the Working list. Tracked time is sent to the Bitrix project management software.',
+				features   : [
+					{
+						description   : 'HTML',
+						subDescription: ' '
+					},
+					{
+						description   : 'SCSS/CSS',
+						subDescription: ' '
+					},
+					{
+						description   : 'Javascript/Angular/ES6',
+						subDescription: ' '
+					}
+				]
+			},
 			{path:`/images/work/trelloClone/s1.png`,
-				title:'',
-				description:'',
+				title:'Slideout menu highlight',
+				description:'Slideout menu is in place for future application enhancements',
 				features :[
 					{
 						description:'HTML',
@@ -920,8 +939,8 @@ const projects = [
 				]
 			},
 			{path:`/images/work/trelloClone/s2.png`,
-				title:'',
-				description:'',
+				title:'Task details modal',
+				description:'A basic interface for viewing and editing task related data',
 				features :[
 					{
 						description:'HTML',
@@ -936,56 +955,36 @@ const projects = [
 						subDescription : ' '
 					}
 				]
-			},
-			{
-				path       : `/images/work/trelloClone/s3.png`,
-				title      : '',
-				description: '',
-				features   : [
-					{
-						description   : 'HTML',
-						subDescription: ' '
-					},
-					{
-						description   : 'SCSS/CSS',
-						subDescription: ' '
-					},
-					{
-						description   : 'Javascript/Angular/ES6',
-						subDescription: ' '
-					},
-				]
-			},
-			{
-				path       : `/images/work/trelloClone/s4.png`,
-				title      : '',
-				description: '',
-				features   : [
-					{
-						description   : 'HTML',
-						subDescription: ' '
-					},
-					{
-						description   : 'SCSS/CSS',
-						subDescription: ' '
-					},
-					{
-						description   : 'Javascript/Angular/ES6',
-						subDescription: ' '
-					}
-				]
 			}
 		]
 	},
 	{
 		id : 14,
 		title:'Wellio.co',
-		description:'',
+		description:'A supplement and wellness company eCommerce Drupal site built while working at Green Group Studio in Lake Worth, FL',
 		featuredImage:`/images/work/Wellio/wellio.co.jpeg`,
 		screenshots:[
 			{path:`/images/work/Wellio/wellio.co.jpeg`,
-				title:'',
-				description:''
+				title:'Landing page',
+				description:'It was designed by the Graphic Designers and passed off to me to build a custom Drupal theme.',
+				features   : [
+					{
+						description   : 'HTML',
+						subDescription: ' '
+					},
+					{
+						description   : 'CSS',
+						subDescription: ' '
+					},
+					{
+						description   : 'Javascript',
+						subDescription: ' '
+					},
+					{
+						description   : 'PHP/Drupal',
+						subDescription: ' '
+					}
+				]
 			}
 		]
 	}
