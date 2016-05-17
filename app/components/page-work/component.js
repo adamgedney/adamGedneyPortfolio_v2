@@ -603,125 +603,377 @@ const projects = [
 	},
 	{
 		id : 7,
-		title:'Librety Harbor NJ',
-		description:'',
+		title:'Liberty Harbor NJ',
+		description:'Single landing page designed for a NJ real estate project',
 		featuredImage:`/images/work/libertyHarbor/LibertyHarborNJ.com.jpg`,
 		screenshots:[
 			{path:`/images/work/libertyHarbor/LibertyHarborNJ.com.jpg`,
 				title:'libertyharbornj.com',
-				description:''
+				description:'',
+				features :[
+					{
+						description:'Photoshop',
+						subDescription : ' '
+					},
+					{
+						description:'HTML',
+						subDescription : ' '
+					},
+					{
+						description:'CSS',
+						subDescription : ' '
+					}
+				]
 			}
 		]
 	},
 	{
 		id : 8,
-		title:'SYnergy Industries',
-		description:'',
+		title:'Synergy Industries',
+		description:'Landing page for a NY based event production company',
 		featuredImage:`/images/work/synergy/synergyEventProduction.png`,
 		screenshots:[
-			{path:`/images/work/synergy/synergyEventProduction.png`,
-				title:'Synergy Industries Event Production Landing Page',
-				description:''
-			},
 			{path:`/images/work/synergy/synergy1.jpg`,
-				title:'',
-				description:''
+				title:'Above the fold',
+				description:'Detail of the above the fold section',
+				features :[
+					{
+						description:'Photoshop',
+						subDescription : ' '
+					},
+					{
+						description:'HTML',
+						subDescription : ' '
+					},
+					{
+						description:'CSS',
+						subDescription : ' '
+					}
+				]
 			},
 			{path:`/images/work/synergy/synergy2.jpg`,
-				title:'',
-				description:''
+				title:'Venues',
+				description:'',
+				features :[
+					{
+						description:'Photoshop',
+						subDescription : ' '
+					},
+					{
+						description:'HTML',
+						subDescription : ' '
+					},
+					{
+						description:'CSS',
+						subDescription : ' '
+					}
+				]
 			},
 			{path:`/images/work/synergy/synergy3.jpg`,
-				title:'',
-				description:''
+				title:'Talent Detail',
+				description:'',
+				features :[
+					{
+						description:'Photoshop',
+						subDescription : ' '
+					},
+					{
+						description:'HTML',
+						subDescription : ' '
+					},
+					{
+						description:'CSS',
+						subDescription : ' '
+					}
+				]
 			},
 			{path:`/images/work/synergy/synergy4.jpg`,
-				title:'',
-				description:''
-			}
+				title:'Map Detail',
+				description:'',
+				features :[
+					{
+						description:'Photoshop',
+						subDescription : ' '
+					},
+					{
+						description:'HTML',
+						subDescription : ' '
+					},
+					{
+						description:'CSS',
+						subDescription : ' '
+					}
+				]
+			},
+			{path:`/images/work/synergy/synergyEventProduction.png`,
+				title:'Full Landing Page',
+				description:'',
+				features :[
+					{
+						description:'Photoshop',
+						subDescription : ' '
+					},
+					{
+						description:'HTML',
+						subDescription : ' '
+					},
+					{
+						description:'CSS',
+						subDescription : ' '
+					}
+				]
+			},
 		]
 	},
 	{
 		id : 9,
 		title:'Orthodox Quote of the Day',
-		description:'',
+		description:'An ExpressJS API and front end for a daily email system I\'ve been running since 2007.',
 		featuredImage:`/images/work/OQOTD/oqotd.jpeg`,
 		screenshots:[
 			{path:`/images/work/OQOTD/oqotd.jpeg`,
 				title:'Orthodox Quote of the Day API Interface & Subscription signup page',
-				description:''
+				description:'A CRON runs every night to grab data from the Mongo database, build an html email, then send to a managed list of subscribers via ASW SES.',
+				features :[
+					{
+						description:'Photoshop',
+						subDescription : ' '
+					},
+					{
+						description:'HTML',
+						subDescription : ' '
+					},
+					{
+						description:'SASS/CSS',
+						subDescription : ' '
+					},
+					{
+						description:'NodeJS/Express/MongoDB',
+						subDescription : ' '
+					}
+				]
 			}
 		]
 	},
 	{
 		id : 10,
 		title:'Parables.tv',
-		description:'',
+		description:'A custom WordPress site built while working at Olympusat. I was responsible for the front-end, for widget, and some plugin development.',
 		featuredImage:`/images/work/parables/parables1.png`,
 		screenshots:[
 			{path:`/images/work/parables/parables1.png`,
-				title:'',
-				description:''
+				title:'Homepage Slider',
+				description:'Slider Revolution slider',
+				features :[
+					{
+						description:'HTML',
+						subDescription : ' '
+					},
+					{
+						description:'SASS/CSS',
+						subDescription : ' '
+					},
+					{
+						description: 'Javascript',
+						subDescription : ' '
+					},
+					{
+						description:'PHP',
+						subDescription : ' '
+					}
+				]
 			},
 			{path:`/images/work/parables/parables2.png`,
-				title:'',
-				description:''
+				title:'Video on Demand page with Filtering',
+				description:'Client side filtering built in Javascript',
+				features :[
+					{
+						description:'HTML',
+						subDescription : ' '
+					},
+					{
+						description:'SASS/CSS',
+						subDescription : ' '
+					},
+					{
+						description: 'Javascript',
+						subDescription : ' '
+					},
+					{
+						description:'PHP',
+						subDescription : ' '
+					}
+				]
 			}
 		]
 	},
 	{
 		id : 11,
 		title:'sgwebmarketing.com',
-		description:'',
+		description:'Custom website for a Key West based SEO Company',
 		featuredImage:`/images/work/sgWebMarketing/sgweb.jpeg`,
 		screenshots:[
 			{path:`/images/work/sgWebMarketing/sgweb.jpeg`,
-				title:'',
-				description:''
+				title:'Landing Page',
+				description:'Simple landing page. Very Bottstrap-esque',
+				features :[
+					{
+						description:'HTML',
+						subDescription : ' '
+					},
+					{
+						description:'CSS',
+						subDescription : ' '
+					},
+					{
+						description: 'Javascript',
+						subDescription : ' '
+					},
+					{
+						description:'PHP',
+						subDescription : ' '
+					}
+				]
 			},
 			{path:`/images/work/sgWebMarketing/services-sgweb.jpeg`,
-				title:'',
-				description:''
+				title:'Services Page',
+				description:'Grid view to display the various services offered.',
+				features :[
+					{
+						description:'HTML',
+						subDescription : ' '
+					},
+					{
+						description:'CSS',
+						subDescription : ' '
+					}
+				]
 			},
 			{path:`/images/work/sgWebMarketing/webdev-sgweb.jpeg`,
-				title:'',
-				description:''
+				title:'Service Detail Page',
+				description:'Detail of an individual service page and its layout',
+				features :[
+					{
+						description:'HTML',
+						subDescription : ' '
+					},
+					{
+						description:'CSS',
+						subDescription : ' '
+					}
+				]
 			}
 		]
 	},
 	{
 		id : 12,
 		title:'tokuhd.com',
-		description:'',
+		description:'Marketing page built for the TokuHD television Network while working at Olympusat',
 		featuredImage:`/images/work/tokuhd/toku.png`,
 		screenshots:[
 			{path:`/images/work/tokuhd/toku.png`,
-				title:'',
-				description:''
+				title:'Landing page',
+				description:'A custom WordPress theme using custom plugins for the Schedule feed on the Schedules page, and running  React components on the front-end to handle some modal window interactions.',
+				features :[
+					{
+						description:'HTML',
+						subDescription : ' '
+					},
+					{
+						description:'SCSS/CSS',
+						subDescription : ' '
+					},
+					{
+						description: 'Javascript/React',
+						subDescription : ' '
+					},
+					{
+						description:'WordPress/PHP',
+						subDescription : ' '
+					}
+				]
 			}
 		]
 	},
 	{
 		id : 13,
 		title:'Trello Clone',
-		description:'',
+		description:'A clone of Trello built for internal use. The data comes from our Bitrix project management software. We needed a mor intuitive interface for manageing tasks.',
 		featuredImage:`/images/work/trelloClone/s1.png`,
 		screenshots:[
 			{path:`/images/work/trelloClone/s1.png`,
 				title:'',
-				description:''
+				description:'',
+				features :[
+					{
+						description:'HTML',
+						subDescription : ' '
+					},
+					{
+						description:'SCSS/CSS',
+						subDescription : ' '
+					},
+					{
+						description: 'Javascript/Angular/ES6',
+						subDescription : ' '
+					}
+				]
 			},
 			{path:`/images/work/trelloClone/s2.png`,
 				title:'',
-				description:''
+				description:'',
+				features :[
+					{
+						description:'HTML',
+						subDescription : ' '
+					},
+					{
+						description:'SCSS/CSS',
+						subDescription : ' '
+					},
+					{
+						description: 'Javascript/Angular/ES6',
+						subDescription : ' '
+					}
+				]
 			},
-			{path:`/images/work/trelloClone/s3.png`,
-				title:'',
-				description:''
+			{
+				path       : `/images/work/trelloClone/s3.png`,
+				title      : '',
+				description: '',
+				features   : [
+					{
+						description   : 'HTML',
+						subDescription: ' '
+					},
+					{
+						description   : 'SCSS/CSS',
+						subDescription: ' '
+					},
+					{
+						description   : 'Javascript/Angular/ES6',
+						subDescription: ' '
+					},
+				]
 			},
-			{path:`/images/work/trelloClone/s4.png`,
-				title:'',
-				description:''
+			{
+				path       : `/images/work/trelloClone/s4.png`,
+				title      : '',
+				description: '',
+				features   : [
+					{
+						description   : 'HTML',
+						subDescription: ' '
+					},
+					{
+						description   : 'SCSS/CSS',
+						subDescription: ' '
+					},
+					{
+						description   : 'Javascript/Angular/ES6',
+						subDescription: ' '
+					}
+				]
 			}
 		]
 	},
