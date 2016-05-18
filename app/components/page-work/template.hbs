@@ -2,14 +2,14 @@
     <a name="work"></a>
     <div class="page__inner">
         <h2>What Does My Work Look Like?</h2>
-        <img src="/images/underconstruction.gif" alt="Under Construction"/>
+        <!--<img src="/images/underconstruction.gif" alt="Under Construction"/>-->
         <div class="timeline__container">
             <ul>
                 {{#each projects as |project|}}
-                    <li class="timeline__item animated" {{action setCurrentProject project.id}} data-projectID="{{project.id}}" style="background-image: url({{project.featuredImage}});">
-                        <a href="#">
-                            <span class="timeline__itemTitle">{{project.title}}</span>
-                        </a>
+                    <li class="timeline__item animated" data-title="{{project.title}}" {{action setCurrentProject project.id}} data-projectID="{{project.id}}" style="background-image: url({{project.featuredImage}});">
+                        <!--<a href="#">-->
+                            <!--<span class="timeline__itemTitle">{{!-- project.title --}}</span>-->
+                        <!--</a>-->
                     </li>
                 {{/each}}
             </ul>

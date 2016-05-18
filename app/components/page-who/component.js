@@ -56,5 +56,5 @@ export default Ember.Component.extend({
 });
 
 
-bio = "<p>My name is Adam Gedney and I'm a Front End Developer who works on the full stack. I have a love for Javascript anything so I work on front end interactions, single page apps, and node back ends. I love building RESTful APIs in Express, but have more recently moved over to AWS for building APIs with a serverless client on S3.</p> <br />" +
-	"<p>My current stack is ES6, Babel via Gulp, with sass to style everything. As for frameworks, I work in Meteor and Ember2. I have dabbled in React and have a few components in production, but I'm not 100% sold on the React opinion and would love to see more progress with the Web Components spec.</p>";
+bio = "<p>My name is Adam Gedney and I'm a Front End Developer who works on the full stack. I have a love for Javascript anything so I work on front-end interactions, single page apps, and node back ends. I love building RESTful APIs in Express, but have more recently moved over to AWS for building APIs with a aim to provide for serverless clients on S3.</p> <br />" +
+	"<p>My current stack is ES6, Babel via Gulp or Webpack, with sass to style everything. As for frameworks, I work in Meteor and Ember2 (This site was built in Ember2 & it's running serverless on AWS S3). I have dabbled in React and have a few components in production.</p>";

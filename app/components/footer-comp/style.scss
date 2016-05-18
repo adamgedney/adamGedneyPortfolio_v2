@@ -7,17 +7,17 @@ footer{
 	margin: 0 auto;
 
 	ul{
-	  @include col(6);
-	  @include col_ctr(6);
+	 width: 157px;
+	  margin: 0 auto;
 
-	  @include break(sm){
-		@include col(12);
-		@include col_ctr(12);
-	  }
+	  //@include break(sm){
+		//@include col(12);
+		//@include col_ctr(12);
+	  //}
 
 	  li{
 		display: inline-block;
-		margin-right: 9px;
+		//margin-right: 9px;
 		line-height: 90px;
 		color: $text-primary-alt;
 		text-decoration: none;

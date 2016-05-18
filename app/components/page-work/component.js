@@ -8,6 +8,69 @@ const {getOwner} = Ember;
 const imagePath = '/images/codeTools/';
 const projects = [
 	{
+		id : 13,
+		title:'Trello Clone',
+		description:'A clone of Trello built for internal use. The data comes from our Bitrix project management software. We needed a mor intuitive interface for manageing tasks.',
+		featuredImage:`/images/work/trelloClone/s4.png`,
+		screenshots:[
+			{
+				path       : `/images/work/trelloClone/s4.png`,
+				title      : 'Dashboard w/ custom background',
+				description: 'Users interact with their tasks with this drag-and-drop interface. Time tracking is implemented when users move tasks to the Working list. Tracked time is sent to the Bitrix project management software.',
+				features   : [
+					{
+						description   : 'HTML',
+						subDescription: ' '
+					},
+					{
+						description   : 'SCSS/CSS',
+						subDescription: ' '
+					},
+					{
+						description   : 'Javascript/Angular/ES6',
+						subDescription: ' '
+					}
+				]
+			},
+			{path:`/images/work/trelloClone/s1.png`,
+				title:'Slideout menu highlight',
+				description:'Slideout menu is in place for future application enhancements',
+				features :[
+					{
+						description:'HTML',
+						subDescription : ' '
+					},
+					{
+						description:'SCSS/CSS',
+						subDescription : ' '
+					},
+					{
+						description: 'Javascript/Angular/ES6',
+						subDescription : ' '
+					}
+				]
+			},
+			{path:`/images/work/trelloClone/s2.png`,
+				title:'Task details modal',
+				description:'A basic interface for viewing and editing task related data',
+				features :[
+					{
+						description:'HTML',
+						subDescription : ' '
+					},
+					{
+						description:'SCSS/CSS',
+						subDescription : ' '
+					},
+					{
+						description: 'Javascript/Angular/ES6',
+						subDescription : ' '
+					}
+				]
+			}
+		]
+	},
+	{
 		id : 1,
 		title:'GenSizer SPA',
 		description:'A generator size estimation tool for Assurance Power. Built with vanilla JS, JQuery, and CSS3 for animations. Project created while employed at Green Group Studio in Lake Worth, FL.',
@@ -602,6 +665,146 @@ const projects = [
 		]
 	},
 	{
+		id : 10,
+		title:'Parables.tv',
+		description:'A custom WordPress site built while working at Olympusat. I was responsible for the front-end, for widget, and some plugin development.',
+		featuredImage:`/images/work/parables/parables1.png`,
+		screenshots:[
+			{path:`/images/work/parables/parables1.png`,
+				title:'Homepage Slider',
+				description:'Slider Revolution slider',
+				features :[
+					{
+						description:'HTML',
+						subDescription : ' '
+					},
+					{
+						description:'SASS/CSS',
+						subDescription : ' '
+					},
+					{
+						description: 'Javascript',
+						subDescription : ' '
+					},
+					{
+						description:'PHP',
+						subDescription : ' '
+					}
+				]
+			},
+			{path:`/images/work/parables/parables2.png`,
+				title:'Video on Demand page with Filtering',
+				description:'Client side filtering built in Javascript',
+				features :[
+					{
+						description:'HTML',
+						subDescription : ' '
+					},
+					{
+						description:'SASS/CSS',
+						subDescription : ' '
+					},
+					{
+						description: 'Javascript',
+						subDescription : ' '
+					},
+					{
+						description:'PHP',
+						subDescription : ' '
+					}
+				]
+			}
+		]
+	},
+	{
+		id : 11,
+		title:'sgwebmarketing.com',
+		description:'Custom website for a Key West based SEO Company',
+		featuredImage:`/images/work/sgWebMarketing/sgweb.jpeg`,
+		screenshots:[
+			{path:`/images/work/sgWebMarketing/sgweb.jpeg`,
+				title:'Landing Page',
+				description:'Simple landing page. Very Bottstrap-esque',
+				features :[
+					{
+						description:'HTML',
+						subDescription : ' '
+					},
+					{
+						description:'CSS',
+						subDescription : ' '
+					},
+					{
+						description: 'Javascript',
+						subDescription : ' '
+					},
+					{
+						description:'PHP',
+						subDescription : ' '
+					}
+				]
+			},
+			{path:`/images/work/sgWebMarketing/services-sgweb.jpeg`,
+				title:'Services Page',
+				description:'Grid view to display the various services offered.',
+				features :[
+					{
+						description:'HTML',
+						subDescription : ' '
+					},
+					{
+						description:'CSS',
+						subDescription : ' '
+					}
+				]
+			},
+			{path:`/images/work/sgWebMarketing/webdev-sgweb.jpeg`,
+				title:'Service Detail Page',
+				description:'Detail of an individual service page and its layout',
+				features :[
+					{
+						description:'HTML',
+						subDescription : ' '
+					},
+					{
+						description:'CSS',
+						subDescription : ' '
+					}
+				]
+			}
+		]
+	},
+	{
+		id : 12,
+		title:'tokuhd.com',
+		description:'Marketing page built for the TokuHD television Network while working at Olympusat',
+		featuredImage:`/images/work/tokuhd/toku.png`,
+		screenshots:[
+			{path:`/images/work/tokuhd/toku.png`,
+				title:'Landing page',
+				description:'A custom WordPress theme using custom plugins for the Schedule feed on the Schedules page, and running  React components on the front-end to handle some modal window interactions.',
+				features :[
+					{
+						description:'HTML',
+						subDescription : ' '
+					},
+					{
+						description:'SCSS/CSS',
+						subDescription : ' '
+					},
+					{
+						description: 'Javascript/React',
+						subDescription : ' '
+					},
+					{
+						description:'WordPress/PHP',
+						subDescription : ' '
+					}
+				]
+			}
+		]
+	},
+	{
 		id : 7,
 		title:'Liberty Harbor NJ',
 		description:'Single landing page designed for a NJ real estate project',
@@ -749,209 +952,6 @@ const projects = [
 					},
 					{
 						description:'NodeJS/Express/MongoDB',
-						subDescription : ' '
-					}
-				]
-			}
-		]
-	},
-	{
-		id : 10,
-		title:'Parables.tv',
-		description:'A custom WordPress site built while working at Olympusat. I was responsible for the front-end, for widget, and some plugin development.',
-		featuredImage:`/images/work/parables/parables1.png`,
-		screenshots:[
-			{path:`/images/work/parables/parables1.png`,
-				title:'Homepage Slider',
-				description:'Slider Revolution slider',
-				features :[
-					{
-						description:'HTML',
-						subDescription : ' '
-					},
-					{
-						description:'SASS/CSS',
-						subDescription : ' '
-					},
-					{
-						description: 'Javascript',
-						subDescription : ' '
-					},
-					{
-						description:'PHP',
-						subDescription : ' '
-					}
-				]
-			},
-			{path:`/images/work/parables/parables2.png`,
-				title:'Video on Demand page with Filtering',
-				description:'Client side filtering built in Javascript',
-				features :[
-					{
-						description:'HTML',
-						subDescription : ' '
-					},
-					{
-						description:'SASS/CSS',
-						subDescription : ' '
-					},
-					{
-						description: 'Javascript',
-						subDescription : ' '
-					},
-					{
-						description:'PHP',
-						subDescription : ' '
-					}
-				]
-			}
-		]
-	},
-	{
-		id : 11,
-		title:'sgwebmarketing.com',
-		description:'Custom website for a Key West based SEO Company',
-		featuredImage:`/images/work/sgWebMarketing/sgweb.jpeg`,
-		screenshots:[
-			{path:`/images/work/sgWebMarketing/sgweb.jpeg`,
-				title:'Landing Page',
-				description:'Simple landing page. Very Bottstrap-esque',
-				features :[
-					{
-						description:'HTML',
-						subDescription : ' '
-					},
-					{
-						description:'CSS',
-						subDescription : ' '
-					},
-					{
-						description: 'Javascript',
-						subDescription : ' '
-					},
-					{
-						description:'PHP',
-						subDescription : ' '
-					}
-				]
-			},
-			{path:`/images/work/sgWebMarketing/services-sgweb.jpeg`,
-				title:'Services Page',
-				description:'Grid view to display the various services offered.',
-				features :[
-					{
-						description:'HTML',
-						subDescription : ' '
-					},
-					{
-						description:'CSS',
-						subDescription : ' '
-					}
-				]
-			},
-			{path:`/images/work/sgWebMarketing/webdev-sgweb.jpeg`,
-				title:'Service Detail Page',
-				description:'Detail of an individual service page and its layout',
-				features :[
-					{
-						description:'HTML',
-						subDescription : ' '
-					},
-					{
-						description:'CSS',
-						subDescription : ' '
-					}
-				]
-			}
-		]
-	},
-	{
-		id : 12,
-		title:'tokuhd.com',
-		description:'Marketing page built for the TokuHD television Network while working at Olympusat',
-		featuredImage:`/images/work/tokuhd/toku.png`,
-		screenshots:[
-			{path:`/images/work/tokuhd/toku.png`,
-				title:'Landing page',
-				description:'A custom WordPress theme using custom plugins for the Schedule feed on the Schedules page, and running  React components on the front-end to handle some modal window interactions.',
-				features :[
-					{
-						description:'HTML',
-						subDescription : ' '
-					},
-					{
-						description:'SCSS/CSS',
-						subDescription : ' '
-					},
-					{
-						description: 'Javascript/React',
-						subDescription : ' '
-					},
-					{
-						description:'WordPress/PHP',
-						subDescription : ' '
-					}
-				]
-			}
-		]
-	},
-	{
-		id : 13,
-		title:'Trello Clone',
-		description:'A clone of Trello built for internal use. The data comes from our Bitrix project management software. We needed a mor intuitive interface for manageing tasks.',
-		featuredImage:`/images/work/trelloClone/s4.png`,
-		screenshots:[
-			{
-				path       : `/images/work/trelloClone/s4.png`,
-				title      : 'Dashboard w/ custom background',
-				description: 'Users interact with their tasks with this drag-and-drop interface. Time tracking is implemented when users move tasks to the Working list. Tracked time is sent to the Bitrix project management software.',
-				features   : [
-					{
-						description   : 'HTML',
-						subDescription: ' '
-					},
-					{
-						description   : 'SCSS/CSS',
-						subDescription: ' '
-					},
-					{
-						description   : 'Javascript/Angular/ES6',
-						subDescription: ' '
-					}
-				]
-			},
-			{path:`/images/work/trelloClone/s1.png`,
-				title:'Slideout menu highlight',
-				description:'Slideout menu is in place for future application enhancements',
-				features :[
-					{
-						description:'HTML',
-						subDescription : ' '
-					},
-					{
-						description:'SCSS/CSS',
-						subDescription : ' '
-					},
-					{
-						description: 'Javascript/Angular/ES6',
-						subDescription : ' '
-					}
-				]
-			},
-			{path:`/images/work/trelloClone/s2.png`,
-				title:'Task details modal',
-				description:'A basic interface for viewing and editing task related data',
-				features :[
-					{
-						description:'HTML',
-						subDescription : ' '
-					},
-					{
-						description:'SCSS/CSS',
-						subDescription : ' '
-					},
-					{
-						description: 'Javascript/Angular/ES6',
 						subDescription : ' '
 					}
 				]
